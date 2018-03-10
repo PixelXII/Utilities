@@ -22,7 +22,7 @@
     
         var total = points/questions;
          
-        if(total == '0') {
+        if(total <= 0 || str.match(/[a-z]/i)) {
             alert("You are either messing with me or debugging, I don't know which.");
          }
         else {
