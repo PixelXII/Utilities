@@ -9,22 +9,24 @@
     <input type='text' id='questions'> <br>
     <label for="points">Enter the total amount of possible points below.</label> <br>
     <input type="text" id="points"> <br>
-    <input type="submit" onclick="document.getElementById('points').submit; document.getElementById('questions').submit;" style="width:0; height:0;">
+    <input type="submit" onclick="analyzePoints()" style="width:0; height:0;">
     <p id="adjust"></p>
     </form>
     </div>
     <script>
     function analyzePoints() {
-    var points = document.getElementById('points').value;
-    var questions = document.getElementById('questions').value;
+        document.getElementById('points').submit; 
+        document.getElementById('questions').submit;
+        var points = document.getElementById('points').value;
+        var questions = document.getElementById('questions').value;
     
-    var total = points/questions;
+        var total = points/questions;
     
-    alert('Each question in your assessment is " + total + " points.");
+        alert('Each question in your assessment is " + total + " points.");
          
-          if(total == '0') {
-        alert("You are either messing with me or debugging, I don't know which.");
-    }
+        if(total == '0') {
+            alert("You are either messing with me or debugging, I don't know which.");
+         }
         else {
             return false;
         }
