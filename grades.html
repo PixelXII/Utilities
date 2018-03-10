@@ -9,7 +9,7 @@
     <input type='text' id='questions'> <br>
     <label for="points">Enter the total amount of possible points below.</label> <br>
     <input type="text" id="points"> <br>
-    <input type="submit" onclick="document.getElementById('points').submit; document.getElementById('questions').submit;" style="width:0px; height:0px;">
+    <input type="submit" onclick="document.getElementById('points').submit; document.getElementById('questions').submit;" style="width:0; height:0;">
     <p id="adjust"></p>
     </form>
     </div>
@@ -20,7 +20,14 @@
     
     var total = points/questions;
     
-    document.getElementById('adjust').innerHTML = "Each question in your quiz/test is worth " + total + " points.";
+    alert('Each question in your assessment is " + total + " points.");
+         
+          if(total == '0') {
+        alert("You are either messing with me or debugging, I don't know which.");
+    }
+        else {
+            return false;
+        }
     
     
     
