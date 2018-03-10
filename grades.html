@@ -1,0 +1,32 @@
+<head>
+<title>Grades Calculator [Utilities]</title>
+</head>
+
+<body>
+<div>
+<form>
+<label for="questions">Enter the number of questions in your quiz/test.</label>
+    <input type='text' id='questions'>
+    <label for="points">Enter the total amount of possible points below.</label>
+    <input type="text" id="points">
+    <p id="adjust"></p>
+    </form>
+    
+    <script>
+    function analyzePoints() {
+    var points = document.getElementById('points').value;
+    var questions = document.getElementById('questions').value;
+    
+    var total = points/questions;
+    
+    document.getElementById('adjust').innerHTML = "Each question in your quiz/test is worth " + total + " points.";
+    
+    
+    
+    }
+    
+    
+    
+    </script>
+    
+    </body>
