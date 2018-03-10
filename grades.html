@@ -21,13 +21,12 @@
         var questions = document.getElementById('questions').value;
     
         var total = points/questions;
-    
-        alert("Each question in your assessment is " + total + " point(s).");
          
         if(total == '0') {
             alert("You are either messing with me or debugging, I don't know which.");
          }
         else {
+            alert("Each question in your assessment is " + total + " point(s).");
             return false;
         }
     
