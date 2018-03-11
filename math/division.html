@@ -36,7 +36,8 @@
       var ad = document.getElementById('ad');
       
       var quotient = first/second;
-      var remainder = first % second;
+      var reman = first % second;
+      var remainder = Math.floor(reman);
       var floored = Math.floor(quotient);
       
        if(isNaN(floored) == true || isNaN(remainder) == true) {
