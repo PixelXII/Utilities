@@ -39,13 +39,27 @@
       var remainder = first % second;
       var floored = Math.floor(quotient);
       
-       if(isNaN(floored) == true || isNaN(remainder) == true) {
+       function typeWriter() {
+          var i = 0;
+          var txt = 'The answer is ' + floored + ' R' + remainder + '.';
+          var speed = 50;
+            if (i < txt.length) {
+             document.getElementById("ad").innerHTML += txt.charAt(i);
+             i++;
+             setTimeout(typeWriter, speed);
+           }
+         }
+      
+      typeWriter();
+      /* if(isNaN(floored) == true || isNaN(remainder) == true) {
         ad.innerHTML = 'Please enter values in the two number fields.';
         setTimeout(function() {window.location.reload();}, 1000000);
     } else {
        ad.innerHTML = 'The answer is ' + floored + ' R' + remainder + '.';
+       */
     }
    }
+    
     function divide() {
       var first = document.getElementById('first').value;
       var second = document.getElementById('second').value;
