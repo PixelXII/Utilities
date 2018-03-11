@@ -37,8 +37,11 @@
         var valve = document.getElementById('square').value;
     
         var tot = valve*valve*valve;
-    
+    if(valve == null) {
+      ad.innerHTML = "Please enter a value.";
+    } else {
        ad.innerHTML = valve + " cubed is " + tot + ".";
+      }
     }
     
     function square() {
@@ -48,8 +51,11 @@
         var valve = document.getElementById('square').value;
     
         var tot = valve*valve;
-    
+       if(valve == null) {
+      ad.innerHTML = "Please enter a value.";
+    } else {
         ad.innerHTML = valve + " squared is " + tot + ".";
+      }
     }
   </script>
   
