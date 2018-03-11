@@ -1,5 +1,40 @@
 <head>
-<title>Math [Addition]</title>
-<link rel="shortcut icon" href="../tool.ico">
+  <title>Math [Addition]</title>
+  <link rel="shortcut icon" href="../tool.ico">
+  <link rel="stylesheet" href="../style.css">
 </head>
 
+<body>
+  <img src="./left.png" style="cursor:pointer;" onclick="window.location = './maths.html'">
+  <div align="center"
+       <form>
+  <label for="first">Enter the first number here.</label> <br>
+  <input type="number" id="first"> <br> <br>
+  <label for="second">Enter the second number here.</label> <br>
+  <input type="number" id="second"> <br> <br>
+  <img src="./check.png" width='50' height='50' style="cursor:pointer;" onclick="findSum()">
+  </form>
+<p id="ad">&nbsp</p>
+  </div>
+<style>
+  p, label {
+    font-family: 'Forum';
+  }
+</style>
+
+  <script>
+    function findSum() {
+      var first = document.getElementById('first').value;
+      var second = document.getElementById('second').value;
+      var ad = document.getElementById('ad');
+      
+      var sum = first+second;
+      
+      if(sum === 0) {
+        ad.innerHTML = "That\'s not too hard."
+      } else {
+        ad.innerHTML = "The sum of " + first + " and " + second + " is " + sum + ".";
+      }
+  </script>
+</body>
+  
