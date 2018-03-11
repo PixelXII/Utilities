@@ -31,11 +31,11 @@
       
       var quotient = first/second;
       
-      document.getElementById('ad').innerHTML = 'The quotient is ' + quotient + '.';
-      
-      if(quotient === 0) {
-        alert('That is an impossible answer.')
+      if(isNaN(quotient) == true) {
+        alert("There is no answer.")
         setTimeout(function() {window.location.reload();}, 1000000);
+    } else {
+       document.getElementById('ad').innerHTML = 'The quotient is ' + quotient + '.';
     }
   }
   </script>
