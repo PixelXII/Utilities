@@ -2,7 +2,6 @@
 <title>Math [Multiplication]</title>
   <link rel="shortcut icon" href="../tool.ico">
   <link rel="stylesheet" href="../style.css">
-  /* I needed to push another commit so I added a comment instead of working with whitespace. */
 </head>
 
 <body style="background-color:black;">
@@ -13,6 +12,7 @@
 <input id="first" type="number"> <br><br>
 <label for="second">Enter your second number here.</label> <br><br>
 <input id="second" type="number"> <br><br>
+  <p id="ad">&nbsp</p>
   <br>
 <input type="image" onclick="multiply()" src="./check.png" style="outline:none;" width="50" height="50" title="Multiply!">
 </form>
@@ -34,14 +34,15 @@ function multiply() {
   
   var first = document.getElementById('first').value;
   var second = document.getElementById('second').value;
+  var ad = document.getElementById('ad');
   
   var product = first*second;
   
   
   if(product == 0) {
-    alert("You can probably figure that out yourself.");
+    ad.innerHTML = "You can probably figure that out yourself.";
   } else {
-  alert('The product of ' + first + ' and ' + second + ' is ' + product + '.');
+  ad.innerHTML = 'The product of ' + first + ' and ' + second + ' is ' + product + '.';
     return false;
   }
 }
