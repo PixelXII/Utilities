@@ -13,6 +13,7 @@
       <p>&nbspdivided by&nbsp</p>
       <input type="number" id="second" placeholder="Divisor"> <br> <br>
       <img src="./check.png" onclick="divide()" width='50' height='50' style="cursor:pointer;">
+      <p id="rem" onclick="remainder()">With remainder</p>
     </form>
     <p id="ad">&nbsp</p>
   </div>
@@ -22,9 +23,27 @@
       font-family: 'Forum';
     }
     
+    rem:hover {
+      text-decoration: underline;
+    }
     
   </style>
   <script>
+    function remainder() {
+      var first = document.getElementById('first').value;
+      var second = document.getElementById('second').value;
+      var ad = document.getElementById('ad');
+      
+      var quotient = first/second;
+      var remainder = first % second;
+      
+       if(isNaN(quotient) == true || isNaN(remainder) == true) {
+        ad.innerHTML = 'Please enter integers in the two number fields.';
+        setTimeout(function() {window.location.reload();}, 1000000);
+    } else {
+       ad.innerHTML = 'The answer is ' + quotient + ' R' + remainder + '.';
+    }
+    
     function divide() {
       var first = document.getElementById('first').value;
       var second = document.getElementById('second').value;
