@@ -4,13 +4,14 @@
 </head>
 
 <body>
+    <img src="./math/left.png" style="cursor:pointer;" onclick="window.location = './while.html'">
 <div align="center">
 <form>
 <label for="questions">Enter the number of questions in your quiz/test.</label> <br>
     <input type='number' id='questions'> <br>
     <label for="points">Enter the total amount of possible points below.</label> <br>
     <input type="number" id="points"> <br> <br>
-    <input type="submit" onclick="analyzePoints()" value="Calculate">
+    <img src="./math/check.png" style="cursor:pointer;" onclick="analyzePoints()">
     </form>
     </div>
     <style>
@@ -24,7 +25,6 @@
         
         label {
             font-family: 'Mina';
-            color:white;
         }
         
         body {
