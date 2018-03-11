@@ -11,8 +11,6 @@
   <label for="first">Enter number here and select your desired algorithm.</label> <br>
   <input type="number" id="square"> <br> <br>
   <span>
-  <p onclick="squareR()" class="links">Find the square root</p>
-  <p onclick="cubeR()" class="links">Find the cube root</p>
   <p onclick="square()" class="links">Square the number</p>
   <p onclick="cube()" class="links">Cube the number</p>
   </span>
@@ -32,28 +30,6 @@
   </style>
   
   <script>
-  function squareR() {
-    document.getElementById('square').submit;
-    
-    var ad = document.getElementById('ad');
-    var valve = document.getElementById('squareR').value;
-    
-    var tot = Math.sqrt(valve);
-    
-    ad.innerHTML = "The square root of " + valve + " is " + tot + ".";
-  }
-    
-    function cubeR() {
-      document.getElementById('square').submit;
-    
-      var ad = document.getElementById('ad');
-      var valve = document.getElementById('cubeR').value;
-    
-      var tot = Math.cbrt(valve);
-    
-     ad.innerHTML = "The cube root of " + valve + " is " + tot + ".";
-    }
-    
     function cube() {
         document.getElementById('square').submit;
     
