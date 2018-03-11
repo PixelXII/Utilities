@@ -28,14 +28,15 @@
     function divide() {
       var first = document.getElementById('first').value;
       var second = document.getElementById('second').value;
+      var ad = document.getElementById('ad');
       
       var quotient = first/second;
       
       if(isNaN(quotient) == true) {
-        alert("There is no answer.")
+        ad.innerHTML = 'Please enter integers in the two number fields.';
         setTimeout(function() {window.location.reload();}, 1000000);
     } else {
-       document.getElementById('ad').innerHTML = 'The quotient is ' + quotient + '.';
+       ad.innerHTML = 'The quotient is ' + quotient + '.';
     }
   }
   </script>
