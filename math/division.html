@@ -25,6 +25,7 @@
     
     #rem:hover {
       text-decoration: underline;
+      cursor:pointer;
     }
     
   </style>
@@ -36,12 +37,13 @@
       
       var quotient = first/second;
       var remainder = first % second;
+      var floored = Math.floor(quotient);
       
-       if(isNaN(quotient) == true || isNaN(remainder) == true) {
-        ad.innerHTML = 'Please enter integers in the two number fields.';
+       if(isNaN(floored) == true || isNaN(remainder) == true) {
+        ad.innerHTML = 'Please enter values in the two number fields.';
         setTimeout(function() {window.location.reload();}, 1000000);
     } else {
-       ad.innerHTML = 'The answer is ' + quotient + ' R' + remainder + '.';
+       ad.innerHTML = 'The answer is ' + floored + ' R' + remainder + '.';
     }
    }
     function divide() {
