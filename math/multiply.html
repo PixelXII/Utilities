@@ -37,15 +37,8 @@ function multiply() {
   
   var product = first*second;
   
-   if(first == null) {
-    var first = 0;
-  }
   
-  if(second == null) {
-    var second = 0;
-  }
-  
-  if(first === 0 || second === 0) {
+  if(product == 0) {
     alert("You can probably figure that out yourself.");
   } else {
   alert('The product of ' + first + ' and ' + second + ' is ' + product + '.');
