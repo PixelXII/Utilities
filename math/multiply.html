@@ -36,12 +36,12 @@ function multiply() {
   var ad = document.getElementById('ad');
   
   var product = first*second;
-  
+  var productR = Math.round(product);
   
   if(product == 0) {
     ad.innerHTML = "You can probably figure that out yourself.";
   } else {
-  ad.innerHTML = 'The product of ' + first + ' and ' + second + ' is ' + product + '.';
+  ad.innerHTML = 'The product of ' + first + ' and ' + second + ' is ' + productR + ', rounded to the nearest hundredth.';
     return false;
   }
 }
