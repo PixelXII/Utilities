@@ -31,8 +31,10 @@
       
       var quotient = first/second;
       
+      document.getElementById('ad').innerHTML = 'The quotient is ' + quotient + '.';
+      
       if(quotient === 0) {
-        document.getElementById('ad').innerHTML = 'That is an impossible answer.';
+        alert('That is an impossible answer.')
         setTimeout(function() {window.location.reload();}, 1000000);
     }
   }
