@@ -13,6 +13,7 @@
     <input type="number" id="points"> <br> <br>
     <img src="./math/check.png" style="cursor:pointer;" onclick="analyzePoints()" width="50" height="50">
     </form>
+    <p id="ad">&nbsp</p>
     </div>
     <style>
         @font-face {
@@ -34,16 +35,15 @@
         document.getElementById('questions').submit;
         var points = document.getElementById('points').value;
         var questions = document.getElementById('questions').value;
+        var ad = document.getElementById('ad');
     
         var total = points/questions;
-        
-        var trimTot = total.toFixed(2);
          
-        if(trimTot <= 0 || points <= 0 || questions <= 0) {
-            alert("You are either messing with me or debugging, I don't know which.");
+        if(total <= 0 || points <= 0 || questions <= 0) {
+            ad.innerHTML = "You are most likely debugging. But for your information, each question in your test is worth " + total + " points.";
          }
         else {
-            alert("Each question in your assessment is " + total + " point(s).");
+            ad.innerHTML = "Each question in your assessment is " + total + " point(s).";
             return false;
         }
     
