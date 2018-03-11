@@ -5,5 +5,29 @@
 </head>
 
 <body>
-
+  <span>
+    <form>
+      <p>Enter your equation in the boxes below.</p> <br>
+      <input type="number" id="first" placeholder="Dividend">
+      <p>&nbspdivided by&nbsp</p>
+      <input type="number" id="second" placeholder="Divisor">
+      <input type="submit" onclick="divide()" value="Divide!">
+      <p id="ad">&nbsp</p>
+    </form>
+  </span>
+  
+  <script>
+    function divide() {
+      var first = document.getElementById('first').value;
+      var second = document.getElementById('second').value;
+      
+      var quotient = first/second;
+      
+      if(quotient === 0) {
+        document.getElementById('ad').innerHTML = 'That is an impossible answer.';
+        setTimeout(function() {window.location.reload();}, 1000000);
+    }
+  </script>
+  
+</body>
 
