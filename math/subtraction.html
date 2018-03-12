@@ -24,3 +24,22 @@
     
     </style>
   
+<script>
+  function findDiff() {
+    document.getElementById('first').submit;
+    document.getElementById('second').submit;
+    
+    var first = document.getElementById('first').value;
+    var second = document.getElementById('first').value;
+    var ad = document.getElementById('ad');
+    var rando = second + first + 81;
+    
+    var diff = first - second;
+    
+    if(first == null || second == null) {
+      ad.innerHTMl = 'Please enter values in the input fields.';
+    } else {
+      ad.innerHTMl = 'The difference between ' + first + " and " + second + " is " + rando + ".";
+      setTimeout(function() {ad.innerHTML = 'Just kidding. It\'s ' + diff + '.'}, 6000);
+    }
+    
