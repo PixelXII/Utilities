@@ -32,9 +32,10 @@
     var first = document.getElementById('first').value;
     var second = document.getElementById('second').value;
     var ad = document.getElementById('ad');
-    var rando = second + first + 81;
     
     var diff = first - second;
+    
+    console.log(diff);
     
     if(first == null || second == null) {
       ad.innerHTMl = 'Please enter values in the input fields.';
