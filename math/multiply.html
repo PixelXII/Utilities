@@ -41,7 +41,10 @@ function multiply() {
   if(product == 0) {
     ad.innerHTML = "You can probably figure that out yourself.";
   } else {
-  ad.innerHTML = 'The product of ' + first + ' and ' + second + ' is ' + productR + ', rounded to the nearest hundredth, ' + product + ', to be precise.';
+    if(product.includes('.') === true) {
+  ad.innerHTML = 'Rounded to the nearest hundredth, the product is ' + productR + '.';
+    } else {
+      ad.innerHTMl = 'The product of ' + first + ' and ' + second + ' is ' + product + '.';
     return false;
   }
 }
