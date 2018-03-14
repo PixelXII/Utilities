@@ -77,7 +77,7 @@ function findSum() {
       var quotient = first/second;
       
       if(isNaN(quotient) == true) {
-        ad.innerHTML = 'Please enter integers in the two number fields.';
+        ad.innerHTML = 'Please enter values in the two number fields.';
         setTimeout(function() {window.location.reload();}, 1000000);
     } else {
        ad.innerHTML = 'The answer is ' + quotient + '.';
