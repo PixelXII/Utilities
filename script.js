@@ -2,9 +2,14 @@ function exposeOptD() {
         var ad = document.getElementById('ad1');
         var first = document.getElementById('first').value;
         var second = document.getElementById('second').value;
-        
-        ad.innerHTML = "<p class="link" onclick="divide()">Divide with remainder</p> <br> <br> <p class="link" onclick="remainder()">Divide with remainder.</p>"
-
+        if(ad.innerHTML === null) {
+                ad.innerHTML = ""
+        }
+        if(ad.innerHTML === "" || ad.innerText === "") {
+        ad.innerHTML = "<p class='link' onclick='divide()'>Divide with remainder</p> <br> <br> <p class='link' onclick='remainder()'>Divide with remainder.</p>';
+        } else { 
+                ad.innerHTML = "";
+        }
 }
 
 function analyzePoints() {
