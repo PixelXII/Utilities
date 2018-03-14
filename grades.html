@@ -1,6 +1,7 @@
 <head>
 <title>Utilities [Grades]</title>
     <link rel="shortcut icon" href="tool.ico">
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -29,30 +30,5 @@
         }
         
     </style>
-    <script>
-    function analyzePoints() {
-        document.getElementById('points').submit; 
-        document.getElementById('questions').submit;
-        var points = document.getElementById('points').value;
-        var questions = document.getElementById('questions').value;
-        var ad = document.getElementById('ad');
-    
-        var total = Math.round(points/questions);
-         
-        if(total <= 0 || points <= 0 || questions <= 0) {
-            ad.innerHTML = "You are most likely debugging. But for your information, each question in your test is worth " + total + " points.";
-         }
-        else {
-            ad.innerHTML = "Each question in your assessment is " + total + " point(s).";
-            return false;
-        }
-    
-    
-    
-    }
-    
-    
-    
-    </script>
     
     </body>
