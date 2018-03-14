@@ -3,7 +3,7 @@ function exposeOptD() {
         var first = document.getElementById('first').value;
         var second = document.getElementById('second').value;
         
-        ad.innerHTML = '<p class="link" onclick="divide()">Divide with remainder</p> <br> <br> <p class="link" onclick="remainder()">Divide with remainder.</p>"
+        ad.innerHTML = "<p class="link" onclick="divide()">Divide with remainder</p> <br> <br> <p class="link" onclick="remainder()">Divide with remainder.</p>"
 
 }
 
