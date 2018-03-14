@@ -9,6 +9,7 @@ function exposeOptD() {
              ad.innerHTML = '';
      }
 }
+}
 
 
 function analyzePoints() {
@@ -148,7 +149,7 @@ function multiply() {
       ad.innerHTML = first + " - " + second + " = " + diff + ".";
     }
  }
-}
+
     
     
     
