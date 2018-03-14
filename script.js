@@ -147,7 +147,8 @@ function multiply() {
     } else {
       ad.innerHTML = first + " - " + second + " = " + diff + ".";
     }
-  }
+ }
+}
     
     
     
