@@ -5,3 +5,38 @@
 </head>
   
 <body>
+  <img src="./left.png" style="cursor:pointer;" onclick="window.location = './maths.html'">
+  <div align="center"
+       <form>
+  <label for="first">Enter the first number here.</label> <br>
+  <input type="number" id="first"> <br> <br>
+  <label for="second">Enter the second number here.</label> <br>
+  <input type="number" id="second"> <br> <br>
+  </form>
+  <div class="selector">
+    <p class="link" onclick="findSum()">Add</p>
+    <p class="link" onclick="findDiff()">Subtract</p>
+    <p class="link" onclick="multiply()">Multiply</p>
+    <p class="link" id="dropDownD" onclick="exposeOptD()"
+<p id="ad">&nbsp</p>
+  </div>
+<style>
+  #dropDownD {
+    display:none;
+  }
+  
+  p, label {
+    font-family: 'Forum';
+  }
+  
+  .link {
+    cursor:pointer;
+  }
+  
+  .link:hover {
+    text-decoration:underline;
+  }
+</style>
+
+  <script src="../script.js"></script>
+</body>
