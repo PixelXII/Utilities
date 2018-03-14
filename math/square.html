@@ -29,6 +29,34 @@
     }
   </style>
   
-  <script src="../script.js"></script>
+  <script>
+function cube() {
+        document.getElementById('square').submit;
+    
+        var ad = document.getElementById('ad');
+        var valve = document.getElementById('square').value;
+    
+        var tot = valve*valve*valve;
+    if(valve === null) {
+      ad.innerHTML = "Please enter a value.";
+    } else {
+       ad.innerHTML = valve + " cubed is " + tot + ".";
+      }
+    }
+    
+    function square() {
+        document.getElementById('square').submit;
+    
+        var ad = document.getElementById('ad');
+        var valve = document.getElementById('square').value;
+    
+        var tot = valve*valve;
+       if(valve === null) {
+      ad.innerHTML = "Please enter a value.";
+    } else {
+        ad.innerHTML = valve + " squared is " + tot + ".";
+      }
+    }
+</script>
   
   </body>
