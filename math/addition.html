@@ -22,27 +22,6 @@
   }
 </style>
 
-  <script>
-    function findSum() {
-      document.getElementById('first').submit;
-      document.getElementById('second').submit;
-      
-      var first = document.getElementById('first').value;
-      var second = document.getElementById('second').value;
-      var ad = document.getElementById('ad');
-      
-      if(first.includes('.') || second.includes('.')) {
-        var sum = parseFloat(first) + parseFloat(second);
-      } else {
-        var sum = parseInt(first,10) + parseInt(second,10);
-      }
-      
-      if(sum === 0 || isNaN(first) == true || isNaN(second) == true) {
-        ad.innerHTML = "That\'s not too hard."
-      } else {
-        ad.innerHTML = "The sum of " + first + " and " + second + " is " + sum + ".";
-      }
-    }
-  </script>
+  <script src="../script.js"></script>
 </body>
   
