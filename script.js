@@ -1,21 +1,3 @@
-function exposeOptD() {
-        var ad = document.getElementById('ad1');
-        var dropDown = document.getElementById('dropDownD');
-        if(dropDown.innerHTML == null) {
-                dropDown.innerHTML = ' ';
-        }
-        if(dropDown.innerText == null) {
-                dropDown.innerText = "";
-        }
-     if(dropDown.innerHTML === "" || dropDown.innerText = "") {
-             ad.innerHTML = "<p class='link' onclick='divide()'>Divide without remainder</p> <br> <p class='link' onclick='remainder()'>Divide with remainder</p>";
-     } else {
-             ad.innerHTML = '';
-     }
-}
-}
-
-
 function analyzePoints() {
         document.getElementById('points').submit; 
         document.getElementById('questions').submit;
