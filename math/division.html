@@ -4,6 +4,8 @@
 <link rel="stylesheet" href="../style.css">
 </head>
 
+  <script src="../script.js"></script>
+
 <body>
   <img src="./left.png" onclick="window.location = './maths.html'" style="cursor:pointer;">
   <div align="center">
@@ -29,39 +31,6 @@
     }
     
   </style>
-  <script> 
-    function remainder() {
-      var first = document.getElementById('first').value;
-      var second = document.getElementById('second').value;
-      var ad = document.getElementById('ad');
-      
-      var quotient = first/second;
-      var reman = first % second;
-      var remainder = Math.floor(reman);
-      var floored = Math.floor(quotient);
-      
-       if(isNaN(floored) == true || isNaN(remainder) == true) {
-        ad.innerHTML = 'Please enter values in the two number fields.';
-        setTimeout(function() {window.location.reload();}, 1000000);
-    } else {
-       ad.innerHTML = 'The answer is ' + floored + ' R' + remainder + '.';
-    }
-   }
-    
-    function divide() {
-      var first = document.getElementById('first').value;
-      var second = document.getElementById('second').value;
-      var ad = document.getElementById('ad');
-      
-      var quotient = first/second;
-      
-      if(isNaN(quotient) == true) {
-        ad.innerHTML = 'Please enter integers in the two number fields.';
-        setTimeout(function() {window.location.reload();}, 1000000);
-    } else {
-       ad.innerHTML = 'The answer is ' + quotient + '.';
-    }
-  }</script>
   
 </body>
 
