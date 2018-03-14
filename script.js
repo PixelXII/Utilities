@@ -1,3 +1,13 @@
+function exposeOptD() {
+        var dropDown = document.getElementById('dropDownD');
+     if(dropDown.style === "none") {
+             dropDown.style.display = "block";
+     } else {
+             dropDown.style.display = "none";
+     }
+}
+
+
 function analyzePoints() {
         document.getElementById('points').submit; 
         document.getElementById('questions').submit;
