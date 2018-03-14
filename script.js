@@ -144,12 +144,21 @@ function multiply() {
     var first = document.getElementById('first').value;
     var second = document.getElementById('second').value;
     var ad = document.getElementById('ad');
+         
+         if(first === null) {
+                 ad.innerText = "That\'s not too hard.";
+                 first = 0;
+         }
+         if(second === null) {
+                 ad.innerText = "That\'s not too hard.";
+                 second = 0;
+         }
     
     var diff = first - second;
     
     console.log(diff);
     
-    if(first == null || second == null) {
+    if(first == 0 || second == 0) {
       ad.innerHTML = 'Please enter values in the input fields.';
     } else {
       ad.innerHTML = first + " - " + second + " = " + diff + ".";
