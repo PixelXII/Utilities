@@ -1,5 +1,5 @@
 function exposeOptD() {
-        var ad = document.getElementById('ad');
+        var ad = document.getElementById('ad1');
         var dropDown = document.getElementById('dropDownD');
      if(dropDown.style === "none") {
              ad.innerHTML = "<p class='link' onclick='divide()'>Divide without remainder</p> <br> <p class='link' onclick='remainder()'>Divide with remainder</p>";
