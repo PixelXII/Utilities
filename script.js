@@ -6,7 +6,7 @@ function exposeOptD() {
                 ad.innerHTML = ""
         }
         if(ad.innerHTML === "" || ad.innerText === "") {
-        ad.innerHTML = "<div id='optD'><p class='link' onclick='divide()'>Divide with remainder</p> <p class='link' onclick='remainder()'>Divide without remainder.</p> </div>";
+        ad.innerHTML = "<div id='optD' width='100' height='50'><p class='link' onclick='divide()'>Divide with remainder</p> <p class='link' onclick='remainder()'>Divide without remainder.</p> </div>";
         } else { 
                 ad.innerHTML = "";
         }
