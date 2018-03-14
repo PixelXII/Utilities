@@ -50,8 +50,8 @@ function findSum() {
         if(second === null) {
                 second = 0;
         }
-      if(sum === 0 || isNaN(first) == true || isNaN(second) == true) {
-        ad.innerHTML = "That\'s not too hard."
+      if(isNaN(sum) == true) {
+        ad.innerHTML = "Please enter a <i>numerical</i> value."
       } else {
         ad.innerHTML = "The sum of " + first + " and " + second + " is " + sum + ".";
       }
