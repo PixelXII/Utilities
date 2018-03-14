@@ -1,9 +1,10 @@
 function exposeOptD() {
+        var ad = document.getElementById('ad');
         var dropDown = document.getElementById('dropDownD');
      if(dropDown.style === "none") {
-             dropDown.style.display = "block";
+             ad.innerHTML = "<p class='link' onclick='divide()'>Divide without remainder</p>";
      } else {
-             dropDown.style.display = "none";
+             ad.innerHTML = "<p class='link' onclick='remainder()'>Divide with remainder</p>";
      }
 }
 
