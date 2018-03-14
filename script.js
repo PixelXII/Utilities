@@ -16,12 +16,12 @@ function analyzePoints() {
         }
     }
 
-function findSum(id1, id2) {
-      document.getElementById(id1).submit;
-      document.getElementById(id2).submit;
+function findSum() {
+      document.getElementById('first').submit;
+      document.getElementById('second').submit;
       
-      var first = document.getElementById(id1).value;
-      var second = document.getElementById(id2).value;
+      var first = document.getElementById('first').value;
+      var second = document.getElementById('second').value;
       var ad = document.getElementById('ad');
       
       if(first.includes('.') || second.includes('.')) {
