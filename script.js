@@ -1,5 +1,5 @@
 function exposeOptD() {
-        var ad = document.getElementById('ad1');
+        var ad = document.getElementById('ad2');
         var first = document.getElementById('first').value;
         var second = document.getElementById('second').value;
         if(ad.innerHTML === null) {
