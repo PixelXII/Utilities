@@ -9,6 +9,11 @@
 <body>
   <img src="./left.png" style="cursor:pointer;" onclick="window.location = './maths.html'">
   <div align="center" width="100">
+    
+    <div align="center" id="outP">
+       <p id="ad1">&nbsp</p>
+       <p id="ad">&nbsp</p>
+    </div>
        <form>
   <label for="first">Enter the first number here.</label> <br>
   <input type="number" id="first"> <br> <br>
@@ -20,8 +25,6 @@
     <p class="link" onclick="findDiff()">Subtract</p>
     <p class="link" onclick="multiply()">Multiply</p>
     <p class="link" onclick="exposeOptD()">Divide</p>
-    <p id="ad1">&nbsp</p>
-    <p id="ad">&nbsp</p>
   </div>
 <style>
   p, label {
@@ -30,6 +33,11 @@
   
   .link {
     cursor:pointer;
+  }
+  
+  #outP {
+    width: 300;
+    height: 10;
   }
   
   .link:hover {
