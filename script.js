@@ -44,6 +44,12 @@ function findSum() {
         var sum = parseInt(first,10) + parseInt(second,10);
       }
       
+        if(first === null) {
+                first = 0;
+        }
+        if(second === null) {
+                second = 0;
+        }
       if(sum === 0 || isNaN(first) == true || isNaN(second) == true) {
         ad.innerHTML = "That\'s not too hard."
       } else {
