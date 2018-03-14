@@ -3,7 +3,11 @@ function exposeOptD() {
         var dropDown = document.getElementById('dropDownD');
         if(dropDown.innerHTML == null) {
                 dropDown.innerHTML = ' ';
-     if(dropDown.innerHTML === "") {
+        }
+        if(dropDown.innerText == null) {
+                dropDown.innerText = "";
+        }
+     if(dropDown.innerHTML === "" || dropDown.innerText = "") {
              ad.innerHTML = "<p class='link' onclick='divide()'>Divide without remainder</p> <br> <p class='link' onclick='remainder()'>Divide with remainder</p>";
      } else {
              ad.innerHTML = '';
