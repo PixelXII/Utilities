@@ -4,6 +4,9 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 
+<script src="../script.js"></script>
+
+
 <body>
   <img src="./left.png" style="cursor:pointer;" onclick="window.location = './maths.html'">
   <div align="center">
@@ -24,23 +27,3 @@
     
     </style>
   
-<script>
-  function findDiff() {
-    document.getElementById('first').submit;
-    document.getElementById('second').submit;
-    
-    var first = document.getElementById('first').value;
-    var second = document.getElementById('second').value;
-    var ad = document.getElementById('ad');
-    
-    var diff = first - second;
-    
-    console.log(diff);
-    
-    if(first == null || second == null) {
-      ad.innerHTML = 'Please enter values in the input fields.';
-    } else {
-      ad.innerHTML = first + " - " + second + " = " + diff + ".";
-    }
- }
-  </script>
