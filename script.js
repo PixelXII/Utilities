@@ -36,6 +36,16 @@ function doExp() {
         var ad = document.getElementById('ad');
         var tot = Math.pow(first, second);
         
+        if(first === null) {
+                first = 0;
+        }
+        if(second === null) {
+                second = 0;
+        }
+        if(isNaN(tot) == true) {
+                ad.innerText = "Please enter a value.";
+        }
+        
          if(tot === 0) {
                  ad.innerText = "Please enter values.";
                    }
