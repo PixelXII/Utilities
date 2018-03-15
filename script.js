@@ -96,7 +96,11 @@ function findSum() {
         ad.innerHTML = 'Please enter values in the two number fields.';
         setTimeout(function() {window.location.reload();}, 1000000);
     } else {
+            if(remainder === 0) {
+                    ad.innerText = 'The answer is ' + floored + '.';
+            } else {
        ad.innerHTML = 'The answer is ' + floored + ' R' + remainder + '.';
+            }
     }
    }
     
