@@ -13,7 +13,9 @@ function exposeOptD() {
 }
 
 function random(10000) {
-        Math.floor( Math.random() * 1000);
+        var ad = document.getElementById('ad');
+        var tot = Math.floor( Math.random() * 1000);
+        ad.innerText = tot;
 }
 
 function analyzePoints() {
