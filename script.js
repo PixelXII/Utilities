@@ -12,6 +12,34 @@ function exposeOptD() {
         }
 }
 
+function cycle() {
+        var ad = document.getElementById('da');
+        var da = document.getElementById('da1');
+        
+        ad.innerText = "Dividend";
+        da.innerText = "Divisor";
+        
+        if(ad.innerText = "Dividend" && da.innerText = "Divisor") {
+                setTimeout(function() {ad.innerText = "Factor"; da.innerText = "Factor";}, 3000);
+        }
+        if(ad.innerText = "Factor" && da.innerText = "Factor") {
+                setTimeout(function() {ad.innerText = "Augend"; da.innerText = "Addend";}, 3000);
+        }
+        if(ad.innerText = "Augend" && da.innerText = "Addend") {
+                setTimeout(function() {ad.innerText = "Minuend"; da.innerText = "Subtrahend";}, 3000);
+        }
+        if(ad.innerText = "Minuend" && da.innerText = "Subtrahend") {
+                setTimeout(function() {ad.innerText = "Base"; da.innerText = "Exponent";}, 3000);
+        }
+        if(ad.innerText = "Base" && da.innerText = "Exponent") {
+                setTimeout(function() {ad.innerText = "Dividend"; da.innerText = "Divisor";}, 3000);
+        } else {
+                console.error("Something happened to function cycle().");
+        }
+}
+
+cycle();
+
 function analyzePoints() {
         document.getElementById('points').submit; 
         document.getElementById('questions').submit;
@@ -29,6 +57,21 @@ function analyzePoints() {
             return false;
         }
     }
+
+function exponent() {
+        var first = document.getElementById('first').value;
+        var second = document.getElementById('second').value;
+        var ad = document.getElementById('ad');
+        var tot = Math.pow(first, second);
+        
+         if(tot === 0) {
+                 ad.innerText = "Please enter values.";
+                   }
+        else {
+            ad.innerText = first + " to the power of " + second + " is " + tot + ".";  
+            return false;
+        }
+}
 
 function findSum() {
       document.getElementById('first').submit;
