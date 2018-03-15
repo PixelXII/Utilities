@@ -12,7 +12,7 @@ function exposeOptD() {
         }
 }
 
-function random(10000) {
+function random() {
         var ad = document.getElementById('ad');
         var tot = Math.floor( Math.random() * 1000);
         ad.innerText = tot;
