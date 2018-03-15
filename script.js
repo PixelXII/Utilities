@@ -12,6 +12,10 @@ function exposeOptD() {
         }
 }
 
+function random(10000) {
+        Math.floor( Math.random() * 1000);
+}
+
 function analyzePoints() {
         document.getElementById('points').submit; 
         document.getElementById('questions').submit;
