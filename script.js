@@ -30,7 +30,7 @@ function analyzePoints() {
         }
     }
 
-function exponent() {
+function doExp() {
         var first = document.getElementById('first').value;
         var second = document.getElementById('second').value;
         var ad = document.getElementById('ad');
