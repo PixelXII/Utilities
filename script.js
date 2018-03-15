@@ -18,6 +18,16 @@ function random() {
         ad.innerText = tot;
 }
 
+function percent() {
+        var ad = document.getElementById('ad');
+        var ad2 = document.getElementById('ad2');
+        var perc = prompt('Enter the number you wish to convert.');
+        var tot = perc/100;
+        
+        ad.innerText = tot;
+}
+        
+
 function analyzePoints() {
         document.getElementById('points').submit; 
         document.getElementById('questions').submit;
