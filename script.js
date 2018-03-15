@@ -14,7 +14,7 @@ function exposeOptD() {
 
 function random() {
         var ad = document.getElementById('ad');
-        var tot = Math.floor( Math.random() * 1000);
+        var tot = Math.floor( Math.random() * 10000);
         ad.innerText = tot;
 }
 
