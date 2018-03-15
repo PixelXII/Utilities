@@ -25,7 +25,7 @@ function analyzePoints() {
             ad.innerHTML = "You are most likely debugging. But for your information, each question in your test is worth " + total + " points.";
          }
         else {
-            ad.innerHTML = "Each question in your assessment is " + total + " point(s).";
+            ad.innerHTML = "Each question in your assessment is about " + total + " point(s).";
             return false;
         }
     }
