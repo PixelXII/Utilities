@@ -18,7 +18,11 @@ function mod() {
         var second = document.getElementById('second').value;
         var tot = first % second;
         
-        ad.innerText = first + " % " + second + " is " + tot;
+        if(isNaN(tot) == true) {
+                ad.innerText = "Please enter values.";
+        } else {
+                ad.innerText = first + " % " + second + " is " + tot;
+        }
 }
 
 function random() {
