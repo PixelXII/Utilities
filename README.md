@@ -1,5 +1,3 @@
-<%= favicon_tag 'tool.ico' %>
-
 # Utilities
 
 I made this for (mostly) my use so I didn't have to use anything else, and I could have absolute control over the functions.
