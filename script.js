@@ -36,7 +36,7 @@ function percent() {
         var ad2 = document.getElementById('ad2');
         var perc = prompt('Enter the number you wish to convert.');
         var tot = perc/100;
-        ad.innerText = tot;
+        ad.innerText = tot + "%";
 }
         
 
