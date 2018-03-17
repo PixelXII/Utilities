@@ -12,6 +12,15 @@ function exposeOptD() {
         }
 }
 
+function mod() {
+        var ad = document.getElementById('ad');
+        var first = document.getElementById('first').value;
+        var second = document.getElementById('second').value;
+        var tot = first % second;
+        
+        ad.innerText = first + " % " + second + " is " + tot;
+}
+
 function random() {
         var ad = document.getElementById('ad');
         var tot = Math.floor( Math.random() * 10000);
@@ -23,7 +32,6 @@ function percent() {
         var ad2 = document.getElementById('ad2');
         var perc = prompt('Enter the number you wish to convert.');
         var tot = perc/100;
-        
         ad.innerText = tot;
 }
         
