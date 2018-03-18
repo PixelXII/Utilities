@@ -1,3 +1,5 @@
+<script src="./script.js"></script>
+
 # Utilities
 
 I made this for (mostly) my use so I didn't have to use anything else, and I could have absolute control over the functions.
