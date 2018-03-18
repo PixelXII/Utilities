@@ -1,4 +1,4 @@
-<script src="./script.js"></script>
+<link rel="shortcut icon" href="./favicon.ico">
 
 # Utilities
 
