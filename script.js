@@ -1,3 +1,10 @@
+window.onload = function() {
+  var link = top.document.createElement("link");
+  link.rel = "shortcut icon";
+  link.href = "/wiki.ico";
+  top.document.getElementsByTagName("head")[0].appendChild(link);
+}
+
 function exposeOptD() {
         var ad = document.getElementById('ad2');
         var first = document.getElementById('first').value;
