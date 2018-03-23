@@ -1,13 +1,3 @@
-function hideSecond() {
-  var sed = document.getElementById('secondDiv');
-  if(sed.style.dislplay = "none") {
-    sed.style.display = "block";
-  } else {
-    sed.style.display = "block";
-  }
-}
-
-
 function absol() {
   var ad = document.getElementById('ad2');
   var first = document.getElementById('first').value;
@@ -16,10 +6,7 @@ function absol() {
   sed.style.display = "none";
   var tot = Math.abs(first);
   if(second != null) {
-    if(sed.style.display != "none") {
-    hideSecond();
-    alert("Only use the first input box for this function.");
-    } 
+    alert("Only use the first input field for this function.");
   } else {
     ad.innerText = tot;
   }
