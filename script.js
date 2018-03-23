@@ -14,12 +14,14 @@ function absol() {
   var second = document.getElementById('second').value;
   var seD = document.getElementById('secondDiv');
   sed.style.display = "none";
+  var tot = Math.abs(first);
   if(second != null) {
     if(sed.style.display != "none") {
+    hideSecond();
     alert("Only use the first input box for this function.");
     } 
   } else {
-    ad.innerText = Math.abs(first);
+    ad.innerText = tot;
   }
 }
     
