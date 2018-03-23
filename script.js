@@ -2,7 +2,7 @@ function absol() {
   var ad = document.getElementById('ad2');
   var first = document.getElementById('first').value;
   var second = document.getElementById('second').value;
-  var seD = document.getElementById('secondDiv');
+  var sed = document.getElementById('secondDiv');
   sed.style.display = "none";
   var tot = Math.abs(first);
   if(second != null) {
