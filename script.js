@@ -1,9 +1,15 @@
-window.onload = function() {
-  var link = top.document.createElement("link");
-  link.rel = "shortcut icon";
-  link.href = "/wiki.ico";
-  top.document.getElementsByTagName("head")[0].appendChild(link);
+function absol() {
+  var ad = document.getElementById('ad2');
+  var first = document.getElementById('first').value;
+  var second = document.getElementById('second').value;
+  document.getElementById('second').style.display = "none";
+  if(second != null) {
+    alert("Only use the first input box for this function.");
+  } else {
+    ad.innerText = Math.abs(first);
+  }
 }
+    
 
 function exposeOptD() {
         var ad = document.getElementById('ad2');
