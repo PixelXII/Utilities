@@ -1,15 +1,23 @@
+function hideSecond() {
+  var sed = document.getElementById('secondDiv');
+  if(sed.style.dislplay = "none") {
+    sed.style.display = "block";
+  } else {
+    sed.style.display = "block";
+  }
+}
+
+
 function absol() {
   var ad = document.getElementById('ad2');
   var first = document.getElementById('first').value;
   var second = document.getElementById('second').value;
   var seD = document.getElementById('secondDiv');
-  seD.style.display = "none";
+  sed.style.display = "none";
   if(second != null) {
-    if(seD.style.display = "none") {
-      return false;
-    } else {
+    if(sed.style.display != "none") {
     alert("Only use the first input box for this function.");
-    }
+    } 
   } else {
     ad.innerText = Math.abs(first);
   }
