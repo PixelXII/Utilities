@@ -2,7 +2,7 @@ function absol() {
   var ad = document.getElementById('ad2');
   var first = document.getElementById('first').value;
   var second = document.getElementById('second').value;
-  document.getElementById('second').style.display = "none";
+  document.getElementById('secondDiv').style.display = "none";
   if(second != null) {
     alert("Only use the first input box for this function.");
   } else {
