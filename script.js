@@ -2,9 +2,14 @@ function absol() {
   var ad = document.getElementById('ad2');
   var first = document.getElementById('first').value;
   var second = document.getElementById('second').value;
-  document.getElementById('secondDiv').style.display = "none";
+  var seD = document.getElementById('secondDiv');
+  seD.style.display = "none";
   if(second != null) {
+    if(seD.style.display = "none") {
+      return false;
+    } else {
     alert("Only use the first input box for this function.");
+    }
   } else {
     ad.innerText = Math.abs(first);
   }
