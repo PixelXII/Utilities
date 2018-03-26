@@ -1,5 +1,5 @@
 function absol() {
-  var ad = document.getElementById('ad2');
+  var ad = document.getElementById('ad');
   var first = document.getElementById('first').value;
   var second = document.getElementById('second').value;
   var sed = document.getElementById('secondDiv');
