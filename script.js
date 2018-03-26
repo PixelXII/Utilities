@@ -25,16 +25,13 @@ function percent() {
 
 function exposeOptD() {
         var ad = document.getElementById('ad2');
-        var first = document.getElementById('first').value;
-        var second = document.getElementById('second').value;
-        if(ad.innerHTML === null) {
-                ad.innerHTML = ""
+        var s = ad.style.display;
+        if(s = "none") {
+          s = "block";
+        } else {
+          s = "none";
         }
-        if(ad.innerHTML === "" || ad.innerText === "") {
-        ad.innerHTML = "<div id='optD' width='100' height='50'><p class='link' onclick='divide()'>Divide without remainder</p> <p class='link' onclick='remainder()'>Divide with remainder.</p> </div>";
-        } else { 
-                ad.innerHTML = "";
-        }
+        
 }
 
 function mod() {
