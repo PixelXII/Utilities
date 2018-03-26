@@ -47,7 +47,7 @@ function percent() {
         var ad2 = document.getElementById('ad2');
         var perc = prompt('Enter the number you wish to convert.');
         if(perc.includes('.')) {
-        var tot = perc/100;
+        var tot = perc*100;
         } else {
         var tot = perc;
         }
