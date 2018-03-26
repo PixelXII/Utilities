@@ -7,6 +7,20 @@ function absol() {
   var tot = Math.abs(first);
   ad.innerText = tot;
 }
+
+function percent() {
+         var ad = document.getElementById('ad');
+         var first = document.getElementById('first').value;
+         var second = document.getElementById('second').value;
+         var sed = document.getElementById('secondDiv');
+         sed.style.display = "none";
+         if(first.includes('.')) { 
+           var tot = first*100;
+         } else {
+           var tot = first;
+         }
+         ad.innerText = tot;
+}
     
 
 function exposeOptD() {
@@ -41,19 +55,6 @@ function random() {
         var tot = Math.floor( Math.random() * 10000);
         ad.innerText = tot;
 }
-
-function percent() {
-        var ad = document.getElementById('ad');
-        var ad2 = document.getElementById('ad2');
-        var perc = prompt('Enter the number you wish to convert.');
-        if(perc.includes('.')) {
-        var tot = perc*100;
-        } else {
-        var tot = perc;
-        }
-        ad.innerText = tot + "%";
-}
-        
 
 function analyzePoints() {
         document.getElementById('points').submit; 
