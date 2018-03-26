@@ -5,7 +5,6 @@ function absol() {
   var sed = document.getElementById('secondDiv');
   sed.style.display = "none";
   var tot = Math.abs(first);
-  alert('Only the first input field should be used for absolute value.');
   ad.innerText = tot;
 }
     
@@ -47,7 +46,11 @@ function percent() {
         var ad = document.getElementById('ad');
         var ad2 = document.getElementById('ad2');
         var perc = prompt('Enter the number you wish to convert.');
+        if(perc.includes('.')) {
         var tot = perc/100;
+        } else {
+        var tot = perc;
+        }
         ad.innerText = tot + "%";
 }
         
