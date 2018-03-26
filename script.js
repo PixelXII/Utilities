@@ -5,11 +5,8 @@ function absol() {
   var sed = document.getElementById('secondDiv');
   sed.style.display = "none";
   var tot = Math.abs(first);
-  if(second != null) {
-    alert("Only use the first input field for this function.");
-  } else {
-    ad.innerText = tot;
-  }
+  alert('Only the first input field should be used for absolute value.');
+  ad.innerText = tot;
 }
     
 
