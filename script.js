@@ -13,13 +13,6 @@ function percent() {
          var first = document.getElementById('first').value;
          var second = document.getElementById('second').value;
          var sed = document.getElementById('secondDiv');
-         sed.style.display = "none";
-         if(sed.style.display === "none") {
-           sed.style.display = "block";
-         } else {
-           sed.style.display = "none";
-         }
-  
          if(first.includes('.')) { 
            var tot = first*100;
          } else {
