@@ -3,7 +3,6 @@ function absol() {
   var first = document.getElementById('first').value;
   var second = document.getElementById('second').value;
   var sed = document.getElementById('secondDiv');
-  sed.style.display = "none";
   var tot = Math.abs(first);
   ad.innerText = tot;
 }
