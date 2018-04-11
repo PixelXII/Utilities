@@ -63,7 +63,7 @@ function analyzePoints() {
         var total = Math.round(points/questions);
          
         if(total <= 0 || points <= 0 || questions <= 0) {
-            ad.innerHTML = "You are most likely debugging. But for your information, each question in your test is worth " + total + " points.";
+            ad.innerHTML = "Really?";
          }
         else {
                 if(total > 1) {
