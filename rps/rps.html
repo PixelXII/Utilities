@@ -4,8 +4,9 @@
 
 <body bgcolor="black">
   <script>
-    var output = null;
-    
+    var output;
+    var result;
+    var arry;
     function outP() {
       document.getElementById('out').innerText = output;
     }
@@ -23,7 +24,7 @@
       }
       
       if(cChoice === choice) {
-        output = "Tie! You both picked " + choice
+        output = "Tie! You both picked " + choice + ".";
       }
       if(cChoice === 'rock') {
         if(choice === 'scissors') {
@@ -49,6 +50,12 @@
           output = "You lose! The computer picked scissors and you picked paper.";
         }
       }
+      if(output.includes('You win!')) {
+        result = 1;
+      } else {
+        result = 0;
+      }
+      console.log(result);
       outP();
     }
   </script>
