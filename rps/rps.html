@@ -52,6 +52,9 @@
       }
       if(output.includes('You win!')) {
         result = 1;
+      } 
+      if(output.includes('Tie!')) {
+        result = 0.5;
       } else {
         result = 0;
       }
