@@ -24,30 +24,30 @@
       }
       
       if(cChoice === choice) {
-        output = "Tie! You both picked " + choice;
+        output = "Tie! The computer picked " + cChoice + " and you picked " + choice
       }
       if(cChoice === 'rock') {
         if(choice === 'scissors') {
-          output = "You lose!"
+          output = "You lose! The computer picked rock and you picked scissors."
         }
         if(choice === 'paper') {
-            output = "You win!";
+            output = "You win! The computer picked rock and you picked paper.";
       }
       }
       if(cChoice === 'paper') {
         if(choice === 'scissors') {
-          output = "You win!"
+          output = "You win! The computer picked paper and you picked scissors."
         }
         if(choice === 'rock') {
-          output = "You lose!"
+          output = "You lose! The computer picked paper and you picked rock."
         }
       }
       if(cChoice === 'scissors') {
         if(choice === 'rock') {
-          output = "You win!";
+          output = "You win! The computer picked scissors and you picked rock.";
         }
         if(choice === 'paper') {
-          output = "You lose!";
+          output = "You lose! The computer picked scissors and you picked paper.";
         }
       }
       outP();
@@ -70,8 +70,8 @@
   </style>
   <div align="center">
     <p id="out">&nbsp</p>
-  <img src="./rock.png" onclick="choice = 'rock'; findC('rock')" title="Rock" class="option">
-  <img src="./paper.png" onclick="choice = 'paper'; findC('paper')" title="Paper" class="option">
-  <img src="./scissors.png" onclick="choice = 'scissors'; findC('scissors')" title="Scissors" class="option">
+  <img src="./rock.png" onclick="choice = 'rock'; setTimeout(findC('rock'), 1000);" title="Rock" class="option">
+  <img src="./paper.png" onclick="choice = 'paper'; setTimeout(findC('paper'), 1000);" title="Paper" class="option">
+  <img src="./scissors.png" onclick="choice = 'scissors'; setTimeout(findC('scissors'), 1000);" title="Scissors" class="option">
   </div>
 </body>
