@@ -14,13 +14,13 @@
     var findC = function(choice) {
       var cChoice = null;
       var num = Math.random();
-      if(num <= 0.4) {
-        cChoice = 'paper';
-      }
-      if(num < 0.65 && num > 0.4) {
-        cChoice = 'scissors';
-      } else {
+      if(num <= 0.333) {
         cChoice = 'rock';
+      }
+      if(num < 0.666 && num > 0.333) {
+        cChoice = 'scissors';
+      } else
+        cChoice = 'paper';
       }
       
       if(cChoice === choice) {
