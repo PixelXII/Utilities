@@ -49,6 +49,14 @@
           output = "You lose! The computer picked scissors and you picked paper.";
         }
       }
+      
+      if(output.includes('You lose')) {
+        // Add one to the loss counter
+      }
+      if(output.includes('You win')) {
+        //Add one to the win counter
+      }
+      
       outP();
     }
   </script>
@@ -76,6 +84,14 @@
   <img src="./rock.png" onclick="choice = 'rock'; findC('rock');" title="Rock" class="option">
   <img src="./paper.png" onclick="choice = 'paper'; findC('paper');" title="Paper" class="option">
   <img src="./scissors.png" onclick="choice = 'scissors'; findC('scissors');" title="Scissors" class="option">
+  </div>
+  
+  <div float="left" id="wins">
+    <h1 id="wins">&nbsp</h1>
+  </div>
+  
+  <div float="right" id="losses">
+    <h1 id="losses">&nbsp</h1>
   </div>
   
 </body>
