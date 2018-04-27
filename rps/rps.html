@@ -5,9 +5,8 @@
 
 <body>
   <script>
-    var choice = null;
-    var cChoice = null;
-    function findC(usrChoice) {
+    var findC = function(choice) {
+      var cChoice = null;
       var num = Math.random();
       if(num <= 0.4) {
         cChoice = 'paper';
@@ -18,6 +17,33 @@
         cChoice = 'rock';
       }
       
+      if(cChoice === choice) {
+        return "Tie! You both picked " + choice;
+      }
+      if(cChoice === 'rock') {
+        if(choice === 'scissors') {
+          return "You lose!"
+        }
+        if(choice === 'paper') {
+            return "You win!";
+      }
+      }
+      if(cChoice === 'paper') {
+        if(choice === 'scissors') {
+          return "You win!"
+        }
+        if(choice === 'rock') {
+          return "You lose!"
+        }
+      }
+      if(cChoice === 'scissors') {
+        if(choice === 'rock') {
+          return "You win!";
+        }
+        if(choice === 'paper') {
+          return "You lose!";
+        }
+      }
     
   </script>
   
