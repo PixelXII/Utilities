@@ -6,7 +6,22 @@
 <body>
   <script>
     var choice = null;
-    
+    var cChoice = null;
+    function findC(usrChoice) {
+      var num = Math.random();
+      if(num <= 0.4) {
+        cChoice = 'paper';
+      }
+      if(num < 0.65 && num > 0.4) {
+        cChoice = 'scissors';
+      } else {
+        cChoice = 'rock';
+      }
+      
     
   </script>
+  
+  <input type="button" onclick="choice = 'rock'; findC('rock')" value="Rock">
+  <input type="button" onclick="choice = 'paper'; findC('paper')" value="Paper">
+  <input type="button" onclick="choice = 'scissors'; findC('scissors')" value="Scissors">
 </body>
