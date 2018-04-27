@@ -5,6 +5,12 @@
 
 <body>
   <script>
+    var output = null;
+    
+    function outP() {
+      document.getElementById('out').innerText = output;
+    }
+    
     var findC = function(choice) {
       var cChoice = null;
       var num = Math.random();
@@ -18,36 +24,39 @@
       }
       
       if(cChoice === choice) {
-        return "Tie! You both picked " + choice;
+        output = "Tie! You both picked " + choice;
       }
       if(cChoice === 'rock') {
         if(choice === 'scissors') {
-          return "You lose!"
+          output = "You lose!"
         }
         if(choice === 'paper') {
-            return "You win!";
+            output = "You win!";
       }
       }
       if(cChoice === 'paper') {
         if(choice === 'scissors') {
-          return "You win!"
+          output = "You win!"
         }
         if(choice === 'rock') {
-          return "You lose!"
+          output = "You lose!"
         }
       }
       if(cChoice === 'scissors') {
         if(choice === 'rock') {
-          return "You win!";
+          output = "You win!";
         }
         if(choice === 'paper') {
-          return "You lose!";
+          output = "You lose!";
         }
       }
-    
+      outP();
+    }
   </script>
-  
+  <div align="center">
+    <p id="out">&nbsp</p>
   <input type="button" onclick="choice = 'rock'; findC('rock')" value="Rock">
   <input type="button" onclick="choice = 'paper'; findC('paper')" value="Paper">
   <input type="button" onclick="choice = 'scissors'; findC('scissors')" value="Scissors">
+  </div>
 </body>
