@@ -49,12 +49,21 @@
           output = "You lose! The computer picked scissors and you picked paper.";
         }
       }
-      
+      var win = document.getElementById('wins');
+      var lose = document.getElementById('losses');
+      var winC = 0;
+      var loseC = 0;
       if(output.includes('You lose')) {
-        // Add one to the loss counter
+        while(true) {
+          loseC++;
+          lose.innerText = loseC;
+        }
       }
       if(output.includes('You win')) {
-        //Add one to the win counter
+        while(true) {
+          winC++;
+          win.innerText = winC;
+        }
       }
       
       outP();
@@ -87,11 +96,13 @@
   </div>
   
   <div float="left" id="wins">
-    <h1 id="wins">&nbsp</h1>
+    <p>Wins: </p>
+    <h1 id="wins">0</h1>
   </div>
   
   <div float="right" id="losses">
-    <h1 id="losses">&nbsp</h1>
+    <p>Losses: </p>
+    <h1 id="losses">0</h1>
   </div>
   
 </body>
