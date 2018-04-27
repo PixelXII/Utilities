@@ -49,30 +49,13 @@
           output = "You lose! The computer picked scissors and you picked paper.";
         }
       }
-      var win = document.getElementById('wins');
-      var lose = document.getElementById('losses');
-      var winC = 0;
-      var loseC = 0;
-      if(output.includes('You lose')) {
-        while(true) {
-          loseC++;
-          lose.innerText = loseC;
-        }
-      }
-      if(output.includes('You win')) {
-        while(true) {
-          winC++;
-          win.innerText = winC;
-        }
-      }
-      
       outP();
     }
   </script>
   
   <style>
     
-    p, h1 {
+    p {
       font-family:'Roboto';
       color:white;
     }
@@ -94,16 +77,5 @@
   <img src="./paper.png" onclick="choice = 'paper'; findC('paper');" title="Paper" class="option">
   <img src="./scissors.png" onclick="choice = 'scissors'; findC('scissors');" title="Scissors" class="option">
   </div>
-  
-  <div float="left" id="wins">
-    <p>Wins: </p>
-    <h1 id="wins">0</h1>
-  </div>
-  
-  <div float="right" id="losses">
-    <p>Losses: </p>
-    <h1 id="losses">0</h1>
-  </div>
-  
 </body>
 </html>
