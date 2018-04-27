@@ -3,7 +3,7 @@
   <script src="./rps.js"></script>
 </head>
 
-<body>
+<body bgcolor="black">
   <script>
     var output = null;
     
@@ -53,10 +53,25 @@
       outP();
     }
   </script>
+  
+  <style>
+    
+    p {
+      font-family:'Roboto';
+      color:white;
+    }
+    
+    .option {
+      cursor:pointer;
+      width:50;
+      height:50;
+    }
+    
+  </style>
   <div align="center">
     <p id="out">&nbsp</p>
-  <img src="./rock.png" onclick="choice = 'rock'; findC('rock')" title="Rock">
-  <img src="./paper.png" onclick="choice = 'paper'; findC('paper')" title="Paper">
-  <img src="./scissors.png" onclick="choice = 'scissors'; findC('scissors')" title="Scissors">
+  <img src="./rock.png" onclick="choice = 'rock'; findC('rock')" title="Rock" class="option">
+  <img src="./paper.png" onclick="choice = 'paper'; findC('paper')" title="Paper" class="option">
+  <img src="./scissors.png" onclick="choice = 'scissors'; findC('scissors')" title="Scissors" class="option">
   </div>
 </body>
