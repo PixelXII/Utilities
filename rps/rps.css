@@ -4,12 +4,12 @@
       color:white;
     }
     
-    a {
+    #link {
       font-family:'Roboto';
       color:white;
     }
     
-    a:hover {
+    #link:hover {
       -webkit-animation-name:boun 1s;
       -moz-animation-name:boun 1s;
       -o-animation-name:boun 1s;
