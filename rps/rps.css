@@ -7,7 +7,7 @@
 }
 
 
-p, a {
+p {
  font-family:'Gothic A1';
  color:white;
 }
@@ -17,8 +17,10 @@ p, a {
     }
     
 .link:hover {
-   cursor:pointer;
-   text-decoration:underline;
+  cursor:pointer;
+  text-decoration:underline;
+  border:5px solid white;
+  border-radius:5px;
 }
     .option {
       border:2px solid black;
