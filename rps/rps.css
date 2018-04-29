@@ -1,13 +1,14 @@
- #out {
-     font-family:'Roboto';
+p {
+ font-family:'Roboto';
+ color:white;
+}
+
+#out {
      font-size:24px;
-     color:white;
     }
     
     #link {
-     font-family:'Roboto';
      cursor:pointer;
-     color:white;
     }
     .option {
       border:2px solid black;
