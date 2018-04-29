@@ -1,56 +1,14 @@
  #out {
-      font-family:'Roboto';
-      font-size:24px;
-      color:white;
+     font-family:'Roboto';
+     font-size:24px;
+     color:white;
     }
     
     #link {
-      font-family:'Roboto';
-      color:white;
-    }
-    
-    #link:hover {
-      -webkit-animation-name:boun 1s;
-      -moz-animation-name:boun 1s;
-      -o-animation-name:boun 1s;
-      animation-name:boun 1s;
+     font-family:'Roboto';
      cursor:pointer;
+     color:white;
     }
-    
-    @-webkit-keyframes boun {
-      0% { scale:0.8; }
-      20% { scale:0.6; }
-      40% { scale:0.8; }
-      60% { scale: 1; }
-      80% { scale:1.18; }
-      100% { scale:1; }
-    }
-    @-moz-keyframes boun {
-      0% { scale:0.8; }
-      20% { scale:0.6; }
-      40% { scale:0.8; }
-      60% { scale: 1; }
-      80% { scale:1.18; }
-      100% { scale:1; }
-    }
-    @-o-keyframes boun {
-      0% { scale:0.8; }
-      20% { scale:0.6; }
-      40% { scale:0.8; }
-      60% { scale: 1; }
-      80% { scale:1.18; }
-      100% { scale:1; }
-    }
-    
-    @keyframes boun {
-      0% { scale:0.8; }
-      20% { scale:0.6; }
-      40% { scale:0.8; }
-      60% { scale: 1; }
-      80% { scale:1.18; }
-      100% { scale:1; }
-    }
-    
     .option {
       border:2px solid black;
       border-radius:50px;
