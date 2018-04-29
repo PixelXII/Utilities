@@ -16,7 +16,7 @@ p, a {
      font-size:24px;
     }
     
-#link:hover {
+.link:hover {
    cursor:pointer;
    text-decoration:underline;
 }
