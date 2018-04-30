@@ -1,7 +1,8 @@
 var stuff = document.getElementById('stuff');
+var output;
 function setO() {
-  stuff.innerText = doG();
-  console.log(doG())
+  stuff.innerText = output;
+  console.log(output)
 }
 
 var doG = function(num) {
@@ -20,9 +21,9 @@ var doG = function(num) {
   }
   
   if(num === noo) {
-    return 'You won ' + Math.ceil(noo) + ' tokens!';
+    output =  'You won ' + Math.ceil(noo) + ' tokens!';
   } else {
-    return 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
+    output = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
   }
   setO()
 }
