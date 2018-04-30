@@ -1,6 +1,6 @@
 var intro = document.getElementById('intro');
-var first === "Welcome to Nine, the gambling game!";
-var second === "Enter a number between 1 and 10 to begin!";
+var first = "Welcome to Nine, the gambling game!";
+var second = "Enter a number between 1 and 10 to begin!";
 var rev = function() {
   if(intro.innerText === first) {
     return second;
