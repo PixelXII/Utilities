@@ -1,21 +1,20 @@
-var intro = document.getElementById('intro');
-var first = "Welcome to Nine, the gambling game!";
-var second = "Enter a number between 1 and 10 to begin!";
-var rev = function() {
-  if(intro.innerText === first) {
-    return second;
-  } 
-  if(intro.innerText === second) {
-    return first;
-  } else {
-    intro.innerHTML = "<h1>Uh oh! Something went wrong there. Reload and try again.</h1>";
+function doG(num) {
+  var noo = Math.floor(Math.random*10);
+  if(noo < 3) {
+    noo = 1;
+    console.log(noo);
   }
-}
-
-function reverseIntro() {
-  do {
-    setInterval(rev(), 5000);
+  if(noo > 3 && noo < 6) {
+    noo = 2;
+    console.log(noo);
   }
-  while(1);
-}
+  if(noo > 6) {
+    noo = 3;
+    console.log(noo);
+  }
+  
+  if(num === noo) {
+   // STUFF 
     
+    
+  }
