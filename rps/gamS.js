@@ -19,3 +19,4 @@ function doG(num) {
   } else {
     stuff.innerHTML = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
   }
+}
