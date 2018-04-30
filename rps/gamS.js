@@ -1,3 +1,4 @@
+var stuff = document.getElementById('stuff');
 function doG(num) {
   var noo = Math.floor(Math.random*10);
   if(noo < 3) {
@@ -14,7 +15,7 @@ function doG(num) {
   }
   
   if(num === noo) {
-   // STUFF 
-    
-    
+    stuff.innerHTML = 'You won ' + Math.ceil(noo) + ' tokens!';
+  } else {
+    stuff.innerHTML = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
   }
