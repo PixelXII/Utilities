@@ -5,6 +5,7 @@ function setO() {
   console.log(output)
 }
 
+var tok;
 function doG(num) {
   var noo = Math.floor(Math.random*10);
   if(noo < 3) {
@@ -22,7 +23,10 @@ function doG(num) {
   console.log(noo)
   if(num === noo) {
     output =  'You won ' + Math.ceil(noo) + ' tokens!';
-  } else {
+  } 
+  if(num === 'account') {
+    output = 'There are ' + tok
+  else {
     output = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
   }
   setO()
