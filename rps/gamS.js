@@ -1,5 +1,10 @@
 var stuff = document.getElementById('stuff');
-function doG(num) {
+function setO() {
+  stuff.innerText = doG();
+  console.log(doG())
+}
+
+var doG = function(num) {
   var noo = Math.floor(Math.random*10);
   if(noo < 3) {
     noo = 1;
@@ -15,8 +20,9 @@ function doG(num) {
   }
   
   if(num === noo) {
-    stuff.innerHTML = 'You won ' + Math.ceil(noo) + ' tokens!';
+    return 'You won ' + Math.ceil(noo) + ' tokens!';
   } else {
-    stuff.innerHTML = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
+    return 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
   }
+  setO()
 }
