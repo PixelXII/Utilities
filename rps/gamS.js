@@ -5,7 +5,7 @@ function setO() {
   console.log(output)
 }
 
-var doG = function(num) {
+function doG(num) {
   var noo = Math.floor(Math.random*10);
   if(noo < 3) {
     noo = 1;
@@ -19,7 +19,7 @@ var doG = function(num) {
     noo = 3;
     console.log(noo);
   }
-  
+  console.log(noo)
   if(num === noo) {
     output =  'You won ' + Math.ceil(noo) + ' tokens!';
   } else {
