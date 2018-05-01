@@ -1,7 +1,7 @@
 var stuff = document.getElementById('stuff');
 var output;
 function setO() {
-  stuff.innerText = output;
+  stuff.innerHTML = output;
   console.log(output)
 }
 
