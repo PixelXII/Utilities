@@ -25,8 +25,8 @@ function doG(num) {
     output =  'You won ' + Math.ceil(noo) + ' tokens!';
   } 
   if(num === 'account') {
-    output = 'There are ' + tok
-  else {
+    output = 'There are ' + tok + ' tokens in your account. Play more to win!';
+  } else {
     output = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
   }
   setO()
