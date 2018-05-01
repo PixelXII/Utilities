@@ -10,17 +10,19 @@ function doG(num) {
   var noo = Math.floor(Math.random*10);
   if(noo < 3) {
     noo = 1;
-    console.log(noo);
   }
   if(noo > 3 && noo < 6) {
     noo = 2;
-    console.log(noo);
   }
   if(noo > 6) {
     noo = 3;
-    console.log(noo);
   }
-  console.log(noo)
+  if(isNaN(noo) == true) {
+    noo = 2;
+  } else {
+    noo = 1
+  }
+  console.log(noo);
   if(num === noo) {
     output =  'You won ' + Math.ceil(noo) + ' tokens!';
   } 
