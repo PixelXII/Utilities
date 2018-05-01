@@ -22,14 +22,17 @@ function doG(num) {
   } else {
     noo = 1
   }
-  console.log(noo);
+  console.log(noo + ' is noo.');
+  console.log(num + ' is num.');
   if(num === noo) {
     output =  'You won ' + Math.ceil(noo) + ' tokens!';
+    tok = tok + Math.ceil(noo);
   } 
   if(num === 'account') {
     output = 'There are ' + tok + ' tokens in your account. Play more to win!';
   } else {
     output = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
+    tok = tok - Math.ceil(noo/2);
   }
   setO()
 }
