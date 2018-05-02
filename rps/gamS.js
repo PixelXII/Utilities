@@ -8,7 +8,7 @@ function setO() {
 var tok;
 function doG(num) {
   var maw = Math.random()*10
-  var noo = Math.floor(maw);
+  var noo = Math.ceil(maw);
   if(noo < 3) { 
     noo = 1;
   }
