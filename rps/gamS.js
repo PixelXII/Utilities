@@ -24,7 +24,7 @@ function doG(num) {
   }
   console.log(noo + ' is noo.');
   console.log(num + ' is num.');
-  if(num === noo) {
+  if(noo == num) {
     output =  'You won ' + Math.ceil(noo) + ' tokens!';
     tok = tok + Math.ceil(noo);
   } 
