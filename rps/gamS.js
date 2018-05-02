@@ -7,8 +7,7 @@ function setO() {
 
 var tok;
 function doG(num) {
-  var maw = Math.random()*10
-  var noo = Math.ceil(maw);
+  var noo = Math.floor((Math.random() * 10) + 1);
   if(noo < 3) { 
     noo = 1;
   }
@@ -17,11 +16,6 @@ function doG(num) {
   }
   if(noo > 6) {
     noo = 3;
-  }
-  if(isNaN(noo) == true) {
-    noo = 2;
-  } else {
-    noo = 1
   }
   console.log(noo + ' is noo.');
   console.log(num + ' is num.');
