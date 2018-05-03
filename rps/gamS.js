@@ -1,5 +1,9 @@
 var stuff = document.getElementById('stuff');
 var output;
+function disAc() {
+  setTimeout(function() {output = "There are " + tok + " tokens in your account.";}, 4000);
+}
+
 function setO() {
   document.getElementById('stuff').innerHTML = output;
   console.log(output)
@@ -40,5 +44,6 @@ function doG(num) {
       tok = tok + Math.ceil(noo);
     }
   setO()
+  disAc()
   }
 }
