@@ -35,10 +35,10 @@ function doG(num) {
     } 
     if(num > noo || num < noo) {
       output = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
-      tok = tok - Math.ceil(noo/2);
+      tok = tok - Math.floor(noo/2);
     } else {
       output = "You won " + Math.ceil(noo) + " tokens!";
-      tok = tok + Math.ceil(noo);
+      tok = tok + Math.floor(noo);
     }
     setO()
     disAc()
