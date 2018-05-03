@@ -11,6 +11,7 @@ function setO() {
 
 var tok = 0;
 function doG(num) {
+  setInterval(function() { document.getElementById('toke').innerHTML = tok;}, 100);
   if(num === 'account') {
     output = 'There are ' + tok + ' tokens in your account. Play more to win!';
   } else if(num === 'reset') {
