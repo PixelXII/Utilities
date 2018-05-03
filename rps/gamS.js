@@ -15,7 +15,7 @@ function doG(num) {
     output = 'There are ' + tok + ' tokens in your account. Play more to win!';
   } else if(num === 'reset') {
     output = "Are you sure you want to reset your account? Press 'Reset' again to confirm!";
-    if(num === reset) {
+    if(num === 'reset') {
       output = "Your account has been reset."
       tok = 0;
     }
