@@ -43,7 +43,8 @@ function doG(num) {
       output = "You won " + Math.ceil(noo) + " tokens!";
       tok = tok + Math.ceil(noo);
     }
-  setO()
-  disAc()
+    setO()
+    disAc()
+    console.log(tok)
   }
 }
