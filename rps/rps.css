@@ -7,15 +7,19 @@
 }
 
 
-p, a {
+p, h1 {
  font-family:'Gothic A1';
  color:white;
 }
 
 #out {
      font-size:24px;
-    }
-    
+}
+
+#toke {
+  font-size: 40px;
+}
+
 .link:hover {
   cursor:pointer;
   text-decoration:underline;
