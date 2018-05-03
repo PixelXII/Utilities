@@ -30,7 +30,8 @@ function doG(num) {
     output = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
     tok = tok - Math.ceil(noo/2);
   } else {
-    output = "We don't know what happened there. Try reloading and trying again.";
+    output = "You won " + Math.ceil(noo) + " tokens!";
+    tok = tok + Math.ceil(noo);
   }
   setO()
 }
