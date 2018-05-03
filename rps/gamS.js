@@ -31,11 +31,11 @@ function doG(num) {
    console.log(num + ' is num.');
    if(noo == num) {
       output =  'You won ' + noo + ' tokens!';
-      tok = tok + noo
+      tok++;
     } 
     if(num > noo || num < noo) {
       output = 'You lost! ' + noo + ' tokens have been taken out of your account.';
-      tok = tok - noo
+      tok--;
     } 
     setO()
     disAc()
