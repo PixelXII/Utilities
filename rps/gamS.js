@@ -11,15 +11,11 @@ function setO() {
 
 var tok = 0;
 function doG(num) {
-  setInterval(function() { document.getElementById('toke').innerHTML = tok;}, 100);
+  setInterval(function() { document.getElementById('toke').innerHTML = tok;}, 20);
   if(num === 'account') {
     output = 'There are ' + tok + ' tokens in your account. Play more to win!';
   } else if(num === 'reset') {
-    output = "Are you sure you want to reset your account? Press 'Reset' again to confirm!";
-    if(num === 'reset') {
-      output = "Your account has been reset."
       tok = 0;
-    }
   } else {
    var noo = Math.floor((Math.random() * 10) + 1);
    if(noo < 3) { 
