@@ -9,7 +9,7 @@ function setO() {
   console.log(output)
 }
 
-var tok;
+var tok = 0;
 function doG(num) {
   if(num === 'account') {
     output = 'There are ' + tok + ' tokens in your account. Play more to win!';
