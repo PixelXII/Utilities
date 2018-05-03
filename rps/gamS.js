@@ -30,12 +30,12 @@ function doG(num) {
    console.log(noo + ' is noo.');
    console.log(num + ' is num.');
    if(noo == num) {
-      output =  'You won ' + Math.ceil(noo) + ' tokens!';
-      tok = tok + Math.ceil(noo);
+      output =  'You won ' + noo + ' tokens!';
+      tok = tok + noo
     } 
     if(num > noo || num < noo) {
-      output = 'You lost! ' + Math.ceil(noo/2) + ' tokens have been taken out of your account.';
-      tok = tok - Math.floor(noo/2);
+      output = 'You lost! ' + noo + ' tokens have been taken out of your account.';
+      tok = tok - noo
     } 
     setO()
     disAc()
