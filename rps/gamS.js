@@ -11,9 +11,6 @@ function doG(num) {
   setInterval(function() { document.getElementById('toke').innerHTML = tok;}, 20);
   if(num === 'reset') {
       tok = 0;
-  } else if(tok = 0) {
-    output = 'You win!';
-    tok++;
   } else {
    var noo = Math.floor((Math.random() * 10) + 1);
    if(noo < 3) { 
