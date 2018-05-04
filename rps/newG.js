@@ -8,6 +8,7 @@ function setO() {
 
 var tok = 0;
 function doG(num) {
+  setInterval(function() { document.getElementById('toke').innerHTML = tok;}, 20);
     if(num =! null) {
       var j = Math.random();
       if(j < 0.5) {
