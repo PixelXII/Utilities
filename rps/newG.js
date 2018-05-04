@@ -24,4 +24,5 @@ function doG(num) {
         tok++;
       }
           
+    }
 }
