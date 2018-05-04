@@ -25,4 +25,5 @@ function doG(num) {
       }
           
     }
+  setO()
 }
