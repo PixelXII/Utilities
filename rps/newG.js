@@ -29,6 +29,12 @@ function doG(num) {
       }
           
     }
+  
+  if(tok == 10) {
+    output = "You won the game!";
+  } else if(tok == -10) {
+    output = "You lost the game!";
+  }
   console.log(tok);
   setO()
 }
