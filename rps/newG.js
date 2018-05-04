@@ -9,7 +9,9 @@ function setO() {
 var tok = 0;
 function doG(num) {
   setInterval(function() { document.getElementById('toke').innerHTML = tok;}, 20);
-    if(num =! null) {
+  if(num === 'reset') {
+    tok = 0;
+  } else if(num === 'chance') {
       var j = Math.random();
       if(j < 0.5) {
         outcome = 'win'
