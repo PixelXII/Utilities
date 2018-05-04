@@ -11,6 +11,7 @@ function doG(num) {
   setInterval(function() { document.getElementById('toke').innerHTML = tok;}, 20);
   if(num === 'reset') {
     tok = 0;
+    output = "Your account has been reset to 0 tokens.";
   } else if(num === 'chance') {
       var j = Math.random();
       if(j < 0.5) {
