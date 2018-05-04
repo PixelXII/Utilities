@@ -12,10 +12,11 @@ function setO() {
 var tok = 0;
 function doG(num) {
   setInterval(function() { document.getElementById('toke').innerHTML = tok;}, 20);
-  if(num === 'account') {
-    output = 'There are ' + tok + ' tokens in your account. Play more to win!';
-  } else if(num === 'reset') {
+  if(num === 'reset') {
       tok = 0;
+  } else if(tok = 0) {
+    output = 'You win!';
+    tok++;
   } else {
    var noo = Math.floor((Math.random() * 10) + 1);
    if(noo < 3) { 
