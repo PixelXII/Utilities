@@ -26,5 +26,6 @@ function doG(num) {
       }
           
     }
+  console.log(tok);
   setO()
 }
