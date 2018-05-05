@@ -36,5 +36,9 @@ function doG(num) {
     output = "You lost the game! Press 'Reset' to replay!";
   }
   console.log(tok);
+  if(output == "You won the game! Press 'Reset' to replay!" || output == "You lost the game! Press 'Reset' to replay!") {
+    output = "Press 'Reset' to replay!";
+  } else {
   setO()
+  }
 }
