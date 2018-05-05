@@ -12,7 +12,7 @@ function doG(num) {
   if(num === 'reset') {
     tok = 0;
     output = "Your account has been reset to 0 tokens.";
-  } else if(output == "You won the game!" || output == "You lost the game!") {
+  } else if(tok > 10 || tok < -10) {
     output = "Click 'Reset' to play again!";
   } else if(num === 'chance') {
       var j = Math.random();
@@ -32,9 +32,9 @@ function doG(num) {
           
     }
   
-  if(tok == 10) {
+  if(tok > 10) {
     output = "You won the game!";
-  } else if(tok == -10) {
+  } else if(tok < -10) {
     output = "You lost the game!";
   }
   console.log(tok);
