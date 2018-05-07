@@ -34,8 +34,10 @@ function doG(num) {
     } 
     if(tok == -10) {
       output = "You lost the game! Press 'Reset' to play again!";
+      setTimeout(function() { window.location.reload(); }, 10000);
     } else if(tok == 10) {
       output = "You won the game! Press 'Reset' to play again!";
+      setTimeout(function() { window.location.reload(); }, 10000);
     }
     setO()
     console.log(tok)
