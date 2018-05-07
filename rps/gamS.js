@@ -8,7 +8,7 @@ function setO() {
 
 var tok = 0;
 function doG(num) {
-  setInterval(function() { document.getElementById('toke').innerHTML = tok;}, 10);
+  setInterval(function() { document.getElementById('toke').innerHTML = tok; console.log(tok);}, 10);
   if(num === 'reset') {
       tok = 0;
   } else {
