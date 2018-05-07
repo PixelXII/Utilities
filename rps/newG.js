@@ -33,9 +33,11 @@ function doG(num) {
    if(tok == -10) {
       output = "You lost the game! Press 'Reset' to play again!";
       document.getElementById('reset').onclick = 'window.location.reload()';
+      document.getElementById('butt').removeAttribute('onclick');
     } else if(tok == 10) {
       output = "You won the game! Press 'Reset' to play again!";
       document.getElementById('reset').onclick = 'window.location.reload()';
+      document.getElementById('butt').removeAttribute('onclick');
     }
   setO()
   }
