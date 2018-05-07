@@ -39,4 +39,3 @@ function doG(num) {
     }
   setO()
   }
-}
