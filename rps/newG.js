@@ -30,15 +30,13 @@ function doG(num) {
           
     }
   
-  if(tok >= 10) {
-  output = "You won the game! Press 'Reset' to replay!";
-  } else if(tok <= -10) {
-    output = "You lost the game! Press 'Reset' to replay!";
-  }
-  console.log(tok);
-  if(output == "You won the game! Press 'Reset' to replay!" || output == "You lost the game! Press 'Reset' to replay!") {
-    document.getElementById('butt').removeAttribute('onclick');
-  } else {
+   if(tok == -10) {
+      output = "You lost the game! Press 'Reset' to play again!";
+      document.getElementById('reset').onclick = 'window.location.reload()';
+    } else if(tok == 10) {
+      output = "You won the game! Press 'Reset' to play again!";
+      document.getElementById('reset').onclick = 'window.location.reload()';
+    }
   setO()
   }
 }
