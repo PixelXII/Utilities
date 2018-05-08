@@ -5,18 +5,17 @@ float radius = 50.0;
 
 
 void setup() {
-  width(200, 200);
+  width(600, 600);
   frameRate(30);
 }
 
+void mouseMoved() {
+  x = mouseX;
+  y = mouseY;
+  }
+
+
 void draw() {
-  radius = radius + sin(frameCount/4);
-  background(255, 255, 248);
-  fill(255, 145, 255);
-  ellipse(x, y, radius, radius);
+  ellipse(x, y, radius, radius)
 }
 
-void mouseMoved() {
-  nX = mouseX;
-  nY = mouseY;
-  }
