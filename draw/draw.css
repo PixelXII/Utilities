@@ -19,4 +19,16 @@
   transform: rotate(-40deg);
   transform-origin: right 210px;
 }
+
+#muost::after {
+  content: "";
+  position:absolute;
+  width:210px;
+  left:30px;
+  height:120px;
+  border-bottom:solid 180px currentColor;
+  border-radius: 0 0 0 100%;
+  transform: rotate(40deg);
+  transform-origin: left 210px;
+}
   
