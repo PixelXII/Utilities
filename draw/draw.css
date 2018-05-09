@@ -5,7 +5,9 @@
   background-color:black;
   border:1px solid black;
   border-radius:50%;
-  box-shadow: 15px 0px currentColor;
+  box-shadow: 
+    150px 240px 0 0 currentColor,
+    300px 240px 0 0 currentColor;
 }
 
 #muost::before {
