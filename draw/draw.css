@@ -1,1 +1,14 @@
+#muost {
+  width:200;
+  width:200;
+  color:black;
+  background-color:black;
+  border:1px solid black;
+  border-radius:180px;
+  box-shadow:100px 100px currentColor;
+}
 
+#muost::before {
+  
+}
+  
