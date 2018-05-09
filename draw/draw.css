@@ -1,10 +1,10 @@
 #muost {
-  width:200;
-  width:200;
+  width:100;
+  width:100;
   color:black;
   background-color:black;
   border:1px solid black;
-  border-radius:180px;
+  border-radius:50%;
   box-shadow:100px 100px currentColor;
 }
 
