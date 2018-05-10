@@ -42,9 +42,9 @@ body {
 }
 
 #mustache:active::after {
-	transform: rotate(10deg);
+	transform: rotate(5deg);
 }
 
 #mustache:active::before {
-	transform: rotate(10deg);
+	transform: rotate(-5deg);
 }
