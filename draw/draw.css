@@ -1,3 +1,13 @@
+@keyframes flutter {
+	from {
+		height:110px;
+		transform: scale(0.9);
+	} to {
+		height:120px;
+		scale(1);
+	}
+}
+
 #mustache {
 	width: 180px;
 	height: 180px;
@@ -35,4 +45,8 @@
 	border-radius: 0 0 100% 0;
 	transform: rotate(40deg);
 	transform-origin: left 210px;
+}
+
+#mustache:active::after, #mustache:active::before {
+	animation-name:0.3s flutter;
 }
