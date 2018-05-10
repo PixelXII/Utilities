@@ -52,9 +52,9 @@
 }
 
 #mustache:active::after {
-	animation:0.4s flutter;
+	animation:0.3s flutter;
 }
 
 #mustache:active::before {
-	animation:0.4s flutter;
+	animation:0.3s flutter;
 }
