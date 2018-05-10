@@ -2,20 +2,6 @@ body {
 	background-color:#fae5d3;
 }
 
-@keyframes flutter {
-	0% {
-		height:120px;
-	}
-	50% {
-		height:110px;
-		transform: scale(0.9);
-	} 
-	100% {
-		height:100px;
-		scale(0.8);
-	}
-}
-
 #mustache {
 	width: 180px;
 	height: 180px;
@@ -56,9 +42,9 @@ body {
 }
 
 #mustache:active::after {
-	animation:0.3s flutter;
+	transform: rotate(10deg);
 }
 
 #mustache:active::before {
-	animation:0.3s flutter;
+	transform: rotate(10deg);
 }
