@@ -1,3 +1,7 @@
+body {
+	background-color:#fae5d3;
+}
+
 @keyframes flutter {
 	0% {
 		height:120px;
