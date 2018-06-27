@@ -38,6 +38,7 @@
       font-size:14px;
       border:2px solid black;
       border-radius:5px;
+      height:30px;
     }
   </style>
   
@@ -49,6 +50,9 @@
       if(val.includes('#')) {
         document.getElementById('display').color = val
       } else {
+        document.getElementByid('label').innerHTML = 'please enter a <i>hex</i> value'
+      }
+    }
         
     elm.addEventListener("keydown", function(e) {
       if(e.keyCode === 13) {
