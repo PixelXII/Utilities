@@ -49,7 +49,7 @@
       val = elm.value
       elm.value = ""
       if(val.includes('#')) {
-        document.getElementById('display').backgroundColor = val
+        document.getElementById('display').style.backgroundColor = val
       } else {
         document.getElementById('label').innerHTML = 'please enter a <i>hex</i> value'
         setTimeout(function() { document.getElementById('label').innerHTML = "enter a hex value"; }, 3000)
