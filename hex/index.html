@@ -5,7 +5,7 @@
 
 <body>
    <div class="main" align="center">
-     <div id="display"></div>
+     <br> <br> <br> <br> <br> <br> <br>
      <div>
        <p id="label">enter a hex value</p>
        <input id="in" type="text" autofocus="true">
@@ -19,14 +19,6 @@
       font-weight: 400;
       src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    
-    #display {
-      color: #ffffff;
-      border:3px solid black;
-      border-radius:5px;
-      height:200px;
-      width:200px;
     }
     
     body {
@@ -49,7 +41,7 @@
       val = elm.value
       elm.value = ""
       if(val.includes('#')) {
-        document.getElementById('display').style.backgroundColor = val
+        document.body.bgColor = val
       } else {
         document.getElementById('label').innerHTML = 'please enter a <i>hex</i> value'
         setTimeout(function() { document.getElementById('label').innerHTML = "enter a hex value"; }, 3000)
