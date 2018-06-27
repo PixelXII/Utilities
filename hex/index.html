@@ -47,10 +47,11 @@
     var val;
     function pasteValue() {
       val = elm.value
+      elm.value = ""
       if(val.includes('#')) {
         document.getElementById('display').color = val
       } else {
-        document.getElementByid('label').innerHTML = 'please enter a <i>hex</i> value'
+        document.getElementById('label').innerHTML = 'please enter a <i>hex</i> value'
       }
     }
         
