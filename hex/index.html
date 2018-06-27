@@ -43,8 +43,7 @@
       if(val.includes('#')) {
         document.body.bgColor = val
       } else {
-        document.getElementById('label').innerHTML = 'please enter a <i>hex</i> value'
-        setTimeout(function() { document.getElementById('label').innerHTML = "enter a hex value"; }, 3000)
+        document.body.bgColor = '#'+val
       }
     }
         
