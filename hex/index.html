@@ -36,10 +36,10 @@
   </style>
   
   <script>
-    var in = document.getElementById('in')
+    var elm = document.getElementById('in')
     var val;
     function pasteValue() {
-      val = in.value
+      val = elm.value
       if(val.includes('#')) {
         document.getElementById('display').color = val
       } else {
