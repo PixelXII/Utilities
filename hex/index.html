@@ -37,6 +37,7 @@
   <script>
     var elm = document.getElementById('in')
     var val;
+    var whiteBg = setInterval(function() { document.getElementById('label').style.bgColor = '#ffffff'; }, 10)
     function pasteValue() {
       val = elm.value
       elm.value = ""
