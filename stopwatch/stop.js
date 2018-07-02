@@ -9,7 +9,7 @@ function increaseTime() {
 }
 
 function start() {
-  startWatch = setInterval(function() { increaseTime() }, 10)
+  startWatch = setInterval(function() { increaseTime() }, 100)
 }
 
 function stopWatch() {
