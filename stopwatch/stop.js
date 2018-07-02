@@ -5,7 +5,7 @@ stop.style.fontSize = '48px';
 function increaseTime() {
   time = time + 0.1
   document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16);
-  stop.innerHTML = time
+  stop.innerHTML = Math.round(100*time)/100;
 }
 
 function start() {
