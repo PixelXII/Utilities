@@ -5,9 +5,6 @@ var stop = document.getElementById('stopwatch')
 stop.style.fontSize = '48px';
 function increaseTime() {
   time = time + 0.1
-  if(time.toString().includes('.') === false) {
-    time = time+'.0'
-  }
   stop.innerHTML = Math.round(100*time)/100;
 }
 
