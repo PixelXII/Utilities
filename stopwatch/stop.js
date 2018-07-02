@@ -13,7 +13,7 @@ function increaseTime() {
 
 function start() {
   startWatch = setInterval(function() { increaseTime() }, 100)
-  colors = setInterval(function() document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16); }, 10)
+  colors = setInterval(function() { document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16); }, 10)
 }
 
 function stopWatch() {
