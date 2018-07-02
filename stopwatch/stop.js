@@ -1,4 +1,4 @@
-var time;
+var time = 0;
 var startWatch;
 var stop = document.getElementById('stopwatch')
 function increaseTime() {
