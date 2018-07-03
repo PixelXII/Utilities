@@ -1,5 +1,5 @@
 var stop = document.getElementById('stopwatch')
-var start, stopWatch, minutes = 0, time = 0, colors, hours = 0, startWatch, seconds = 0, text = document.getElementById('stopText');
+var start, stopWatch, minutes = 00, colors, hours = 00, startWatch, seconds = 00, text = document.getElementById('stopText');
 stop.style.display = "none"
 setTimeout(function() { loadPage() }, 3000)
 
