@@ -1,5 +1,5 @@
 var stop = document.getElementById('stopwatch')
-var start, stopWatch, minutes = 0, time = 0, colors, startWatch, seconds = 0;
+var start, stopWatch, minutes = 0, time = 0, colors, hours = 0, startWatch, seconds = 0;
 stop.style.display = "none"
 setTimeout(function() { loadPage() }, 3000)
 
@@ -8,8 +8,15 @@ function loadPage() {
   document.getElementById('warning').style.display = "none"
   function increaseTime() {
     seconds++
-    minutes = Math.floor(time / 60);
-    seconds = time - minutes * 60;
+    if(seconds >= 60) {
+      seconds = 0
+      minutes++
+    } else if(minutes >= 60) {
+      minutes = 0
+      hours++
+    } else if(hours === 24) {
+      document.getElementById('stopText').innerHTML = "oh, why have you left me on this long!! my battery's almost dead!!"
+    }
     document.getElementById('stopText').innerHTML = minutes+':'+seconds
   }
   start = function() {
