@@ -17,7 +17,7 @@ function loadPage() {
     } else if(hours === 24) {
       document.getElementById('stopText').innerHTML = "oh, why have you left me on this long!! my battery's almost dead!!"
     }
-    text.innerHTML = hours+':'+minutes+':'+seconds
+    text.innerHTML = hours+' hours, '+minutes+' minutes, and '+seconds+' seconds.'
   }
   start = function() {
     startWatch = setInterval(function() { increaseTime() }, 1000)
