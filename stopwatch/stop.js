@@ -37,5 +37,6 @@ function loadPage() {
     hours = 0;
     clearInterval(colors)
     clearInterval(startWatch)
+    text.innerHTML = '0 hours, 0 minutes, and 0 seconds.'
   }
 }
