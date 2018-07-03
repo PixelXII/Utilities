@@ -37,4 +37,5 @@ function loadPage() {
     hours = 0;
     clearInterval(colors)
     clearInterval(startWatch)
+  }
 }
