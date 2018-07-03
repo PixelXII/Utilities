@@ -12,7 +12,7 @@ function loadPage() {
   document.getElementById('warning').style.display = "none"
   function increaseTime() {
     time = time + 0.1
-    stop.innerHTML = Math.round(100*time)/100;
+    document.getElementById('stopText').innerHTML = Math.round(100*time)/100;
   }
   start = function() {
     startWatch = setInterval(function() { increaseTime() }, 100)
