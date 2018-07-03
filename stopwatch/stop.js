@@ -18,9 +18,9 @@ function loadPage() {
       document.getElementById('stopText').innerHTML = "oh, why have you left me on this long!! my battery's almost dead!!"
     }
     if(seconds === 1) {
-      text.innerHTML = hours+' hours, '+minutes+' minutes, and '+seconds+' second.'
+      text.innerHTML = hours+' hours, '+minutes+' minutes, '+seconds+' second.'
     } else {
-      text.innerHTML = hours+' hours, '+minutes+' minutes, and '+seconds+' seconds.'
+      text.innerHTML = hours+' hours, '+minutes+' minutes, '+seconds+' seconds.'
     }
   }
   start = function() {
@@ -37,6 +37,6 @@ function loadPage() {
     hours = 0;
     clearInterval(colors)
     clearInterval(startWatch)
-    text.innerHTML = '0 hours, 0 minutes, and 0 seconds.'
+    text.innerHTML = '0 hours, 0 minutes, 0 seconds.'
   }
 }
