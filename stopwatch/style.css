@@ -10,3 +10,7 @@ body {
   font-family:'Markazi Text';
   font-size:48px;
 }
+
+start {
+  cursor:pointer;
+}
