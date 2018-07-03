@@ -8,7 +8,6 @@ stop.style.display = "none"
 setTimeout(function() { loadPage() }, 3000)
 
 function loadPage() {
-  stop.style.fontSize = '48px';
   stop.style.display = "block"
   document.getElementById('warning').style.display = "none"
   function increaseTime() {
