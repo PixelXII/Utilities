@@ -1,5 +1,5 @@
 var stop = document.getElementById('stopwatch')
-var start, stopWatch, minutes = 00, colors, hours = 00, startWatch, seconds = 00, text = document.getElementById('stopText');
+var start, stopWatch, minutes = 00, colors, hours = 00, startWatch, resetWatch, seconds = 00, text = document.getElementById('stopText');
 stop.style.display = "none"
 setTimeout(function() { loadPage() }, 3000)
 
@@ -23,9 +23,14 @@ function loadPage() {
     startWatch = setInterval(function() { increaseTime() }, 1000)
     colors = setInterval(function() { document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16); }, 10)
   }
-  
   stopWatch = function() {
     clearInterval(startWatch)
     clearInterval(colors)
   } 
+  resetWatch = function() {
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    clearInterval(colors)
+    clearInterval(startWatch)
 }
