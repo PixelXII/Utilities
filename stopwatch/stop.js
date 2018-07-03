@@ -10,7 +10,7 @@ setTimeout(function() { loadPage() }, 3000)
 function loadPage() {
   stop.style.display = "block"
   document.getElementById('warning').style.display = "none"
-  function increaseTime() {
+ /* function increaseTime() {
     time = time + 0.1
     document.getElementById('stopText').innerHTML = Math.round(100*time)/100;
   }
@@ -21,5 +21,21 @@ function loadPage() {
   stopWatch = function() {
     clearInterval(startWatch)
     clearInterval(colors)
-  }
+  } */
+  var seconds = new Date().getTime(), last = seconds,
+
+intrvl = setInterval(function() {
+    var now = new Date().getTime();
+
+    if(now - last > 5){
+        if(confirm("Delay registered, terminate?")){
+            clearInterval(intrvl);
+            return;
+        }
+    }
+
+    last = now;
+    document.getElementById('stopText').innerHTML = now - seconds;
+
+}, 333);
 }
