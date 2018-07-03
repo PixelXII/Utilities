@@ -38,5 +38,6 @@ function loadPage() {
     clearInterval(colors)
     clearInterval(startWatch)
     text.innerHTML = '0 hours, 0 minutes, 0 seconds.'
+    document.body.style.background = '#ffffff'
   }
 }
