@@ -4,6 +4,9 @@ var colours;
 var stop = document.getElementById('stopwatch')
 var start;
 var stopWatch;
+stop.style.display = "none"
+setTimeout(function() { loadPage() }, 3000)
+
 function loadPage() {
   stop.style.fontSize = '48px';
   stop.style.display = "block"
@@ -20,8 +23,4 @@ function loadPage() {
     clearInterval(startWatch)
     clearInterval(colors)
   }
-}
-
-document.onload = function() {
-  setTimeout(function() { loadPage() }, 3000)
 }
