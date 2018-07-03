@@ -1,5 +1,5 @@
 var stop = document.getElementById('stopwatch')
-var start, stopWatch, minutes = 00, colors, hours = 00, startWatch, resetWatch, seconds = 00, text = document.getElementById('stopText');
+var start, stopWatch, minutes = 00, colors, hours = 00, startWatch, sec = 'seconds', min = 'minutes', hr = 'hours', resetWatch, seconds = 00, text = document.getElementById('stopText');
 stop.style.display = "none"
 setTimeout(function() { loadPage() }, 3000)
 
@@ -18,10 +18,17 @@ function loadPage() {
       document.getElementById('stopText').innerHTML = "oh, why have you left me on this long!! my battery's almost dead!!"
     }
     if(seconds === 1) {
-      text.innerHTML = hours+' hours, '+minutes+' minutes, '+seconds+' second.'
+      sec = 'second'
+    } else if(minutes === 1) {
+      min = 'minute'
+    } else if(hours === 1) {
+      hr = 'hour'
     } else {
-      text.innerHTML = hours+' hours, '+minutes+' minutes, '+seconds+' seconds.'
+      sec = 'seconds'
+      min = 'minutes'
+      hr = 'hours'
     }
+    text.innerHTML = hours+" "+hr+', '+minutes+' '+min+', '+seconds+' '+sec+'.'
   }
   start = function() {
     startWatch = setInterval(function() { increaseTime() }, 1000)
