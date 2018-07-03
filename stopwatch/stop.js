@@ -16,7 +16,6 @@ function loadPage() {
   }
   start = function() {
     startWatch = setInterval(function() { increaseTime() }, 100)
-    colors = setInterval(function() { document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16); }, 10)
   }
   stopWatch = function() {
     clearInterval(startWatch)
@@ -26,16 +25,8 @@ function loadPage() {
 
 intrvl = setInterval(function() {
     var now = new Date().getTime();
-
-    if(now - last > 5){
-        if(confirm("Delay registered, terminate?")){
-            clearInterval(intrvl);
-            return;
-        }
-    }
-
     last = now;
     document.getElementById('stopText').innerHTML = now - seconds;
-
-}, 333);
+    colors = setInterval(function() { document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16); }, 10)
+  }, 100);
 }
